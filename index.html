@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Навигация | Главная</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="MobileOptimized" content="320">
+    <!--[if lt IE 9]>
+    <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        * {
+            cursor: help;
+            box-sizing: border-box;
+        }
+
+
+    </style>
+</head>
+<body>
+<!--[if lt IE 9]>
+<p class="browserupgrade" style="color: #fff;background: #000;padding: 20px 15px; text-align: center;">You are using an
+    <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your
+    experience.</p>
+<![endif]-->
+
+
+<main class="main-page" role="main">
+    <div class="container">
+        <section class="departments">
+
+            <form action="">
+                <section class="form-search">
+                    <div class="form-search__input">
+                        <div class="input-inner">
+                            <div class="input-inner__location">
+                                <input class="input-inner__control" type="text" id="password" placeholder="Введите название">
+                            </div>
+
+                            <div class="input-inner__addon">
+                                <span class="addon-img"></span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="form-search__button">
+                        <button class="btn btn_search" type="submit">
+                            Найти
+                        </button>
+                    </div>
+
+                </section>
+            </form>
+
+
+
+            <!-- верхний ряд кнопок-->
+            <ul class="departments__list">
+                <li class="departments__item">
+                    <!--  Диваны-Кресла -->
+                    <button class="btn btn_theme" id="sofa" data-link="/category/show/1/2/2/">
+                        <div class="btn__img btn__img_sofa"></div>
+                        <span class="btn__text">Диваны/Кресла</span>
+                    </button>
+                    <!-- /Диваны-Кресла  -->
+                </li>
+
+                <li class="departments__item">
+                    <!--  Кухни -->
+                    <button class="btn btn_theme btn_theme-gray" id="kitchen" data-link="/category/show/1/2/2/">
+                        <div class="btn__img btn__img_kitchen"></div>
+                        <span class="btn__text">Кухни</span>
+                    </button>
+                    <!--  /Кухни -->
+                </li>
+
+                <li class="departments__item">
+                    <!-- Сантехника  -->
+                    <button class="btn btn_theme btn_theme-lightgray" id="sanitary" data-link="/category/show/1/2/2/">
+                        <div class="btn__img btn__img_sanitary"></div>
+                        <span class="btn__text">Сантехника</span>
+                    </button>
+                    <!-- /Сантехника  -->
+                </li>
+
+                <li class="departments__item">
+                    <!-- Кровати-Матрасы  -->
+                    <button class="btn btn_theme" id="bed" data-link="/category/show/1/2/2/">
+                        <div class="btn__img btn__img_bed"></div>
+                        <span class="btn__text">Кровати/Матрасы</span>
+                    </button>
+                    <!-- /Кровати-Матрасы  -->
+                </li>
+            </ul>
+            <!-- /верхний ряд кнопок-->
+
+            <!-- центраьный ряд кнопок-->
+            <ul class="departments__list">
+                <li class="departments__item departments__item_invested">
+                    <!-- верхний  мелкий -->
+                    <ul class="departments__list">
+                        <li class="departments__item">
+                            <!-- Столы-Стулья  -->
+                            <button class="btn btn_theme btn_theme-brown" id="table-chair"
+                                    data-link="/category/show/1/2/2/">
+                                <div class="btn__img btn__img_table-chair"></div>
+                                <span class="btn__text">Столы/Стулья</span>
+                            </button>
+                            <!-- /Столы-Стулья  -->
+                        </li>
+                    </ul>
+                    <!-- /верхний  мелкий -->
+                    <!-- нижний мелкий  -->
+                    <ul class="departments__list">
+                        <li class="departments__item">
+                            <!--  Детская мебель -->
+                            <button class="btn btn_theme btn_theme-gray" id="children-furniture"
+                                    data-link="/category/show/1/2/2/">
+                                <div class="btn__img btn__img_children-furniture"></div>
+                                <span class="btn__text">Детская мебель</span>
+                            </button>
+                            <!-- /Детская мебель  -->
+                        </li>
+                    </ul>
+                    <!-- /нижний мелкий  -->
+                </li>
+
+                <li class="departments__item departments__item_main">
+                    <!--  Салоны -->
+                    <button class="btn btn_theme" id="salons" data-link="/category/show/1/2/2/">
+                        <div class="btn__img btn__img_salons"></div>
+                        <span class="btn__text btn__text_salons">Салоны</span>
+                    </button>
+                    <!-- /Салоны  -->
+                </li>
+
+                <li class="departments__item  departments__item_invested">
+                    <!-- верхний  мелкий -->
+                    <ul class="departments__list">
+                        <li class="departments__item">
+                            <!--  Свет -->
+                            <button class="btn btn_theme btn_theme-brown" id="light" data-link="/category/show/1/2/2/">
+                                <div class="btn__img btn__img_light"></div>
+                                <span class="btn__text"></span>
+                            </button>
+                            <!--  /Свет -->
+                        </li>
+                    </ul>
+                    <!-- /верхний  мелкий -->
+                    <!-- нижний мелкий  -->
+                    <ul class="departments__list">
+                        <li class="departments__item">
+                            <!--  Шкафы -->
+                            <button class="btn btn_theme btn_theme-lightgray" id="wardrobe"
+                                    data-link="/category/show/1/2/2/">
+                                <div class="btn__img btn__img_wardrobe"></div>
+                                <span class="btn__text">Шкафы</span>
+                            </button>
+                            <!--  /Шкафы -->
+                        </li>
+                    </ul>
+                    <!-- /нижний мелкий  -->
+                </li>
+            </ul>
+            <!-- /центраьный ряд кнопок-->
+            <!-- Нижний ряд кнопок-->
+            <ul class="departments__list">
+                <li class="departments__item">
+                    <!-- Другое  -->
+                    <button class="btn btn_theme btn_theme-lightgray" id="other" data-link="/category/show/1/2/2/">
+                        <div class="btn__img btn__img_other"></div>
+                        <span class="btn__text">Другое</span>
+                    </button>
+                    <!-- /Другое  -->
+                </li>
+
+                <li class="departments__item">
+                    <!--  Рестораны и кафе -->
+                    <button class="btn btn_theme btn_theme-gray" id="restaurant" data-link="/category/show/1/2/2/">
+                        <div class="btn__img btn__img_restaurant"></div>
+                        <span class="btn__text">Рестораны и кафе</span>
+                    </button>
+                    <!-- /Рестораны и кафе  -->
+                </li>
+
+                <li class="departments__item  departments__item_invested">
+                    <!-- верхний  мелкий -->
+                    <ul class="departments__list">
+                        <li class="departments__item departments__item_small">
+                            <!-- Информация-Услуги  -->
+                            <button class="btn btn_theme btn_theme_small btn_theme-lightgray" id="info"
+                                    data-link="/category/show/1/2/2/">
+                                <div class="btn__img btn__img_info btn__img_small"></div>
+                                <span class="btn__text btn__text_small">
+                                    <span class="btn__text-word">Информация/Услуги</span>
+                                </span>
+                            </button>
+                            <!-- /Информация-Услуги  -->
+                        </li>
+                    </ul>
+                    <!-- /верхний  мелкий -->
+                    <!-- нижний мелкий  -->
+                    <ul class="departments__list">
+                        <li class="departments__item departments__item_small">
+                            <!-- Акции и скидки  -->
+                            <button class="btn btn_theme btn_theme_small" id="discounts"
+                                    data-link="/category/show/1/2/2/">
+                                <div class="btn__img btn__img_discounts btn__img_small"></div>
+                                <span class="btn__text btn__text_small">
+                                    <span class="btn__text-word">Акции и скидки</span>
+                                </span>
+                            </button>
+                            <!--  /Акции и скидки -->
+                        </li>
+                    </ul>
+                    <!-- /нижний мелкий  -->
+                </li>
+
+                <li class="departments__item  departments__item_invested">
+                    <!-- верхний  мелкий -->
+                    <ul class="departments__list">
+                        <li class="departments__item departments__item_small">
+                            <!--  Туалет -->
+                            <button class="btn btn_theme btn_theme_small  btn_theme-brown" id="toilet"
+                                    data-link="/category/show/1/2/2/">
+                                <div class="btn__img btn__img_toilet  btn__img_opposite"></div>
+                                <span class="btn__text btn__text_small">
+                                    <span class="btn__text-word btn__text-word_opposite">Туалет</span>
+                                </span>
+                            </button>
+                            <!-- /Туалет  -->
+                        </li>
+                    </ul>
+                    <!-- /верхний  мелкий -->
+                    <!-- нижний мелкий  -->
+                    <ul class="departments__list">
+                        <li class="departments__item departments__item_small">
+                            <!--  Где я? -->
+                            <button class="btn btn_theme btn_theme_small" id="where" data-link="/category/show/1/2/2/">
+                                <div class="btn__img btn__img_where btn__img_opposite"></div>
+                                <span class="btn__text btn__text_small">
+                                    <span class="btn__text-word btn__text-word_opposite">Где я?</span>
+                                </span>
+                            </button>
+                            <!--  /Где я? -->
+                        </li>
+                    </ul>
+                    <!-- /нижний мелкий  -->
+                </li>
+            </ul>
+            <!-- /Нижний ряд кнопок-->
+        </section>
+    </div>
+</main>
+
+</body>
+</html>
+

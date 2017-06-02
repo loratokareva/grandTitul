@@ -1,0 +1,78 @@
+input, textarea {
+  outline: none;
+}
+
+input:active, textarea:active {
+  outline: none;
+}
+
+.form-search {
+  font-size: 0;
+  width: 100%;
+  margin-bottom: -7px;
+  &__input,
+  &__button {
+    display: inline-block;
+    font-size: 16px;
+    padding: 0 5px;
+    vertical-align: text-bottom;
+
+  }
+
+  &__input {
+    min-width: calc(100% - 222px);
+  }
+  &__button {
+    width: 222px;
+  }
+}
+
+.input-inner {
+  position: relative;
+  border: 6px solid #b9b9b9;
+  border-radius: 30px;
+  padding: 3px 12px;
+  //box-shadow: inset 0 1px 0 #959595,
+  //inset 0 -1px 0 #959595,
+  //inset 2px 0 0 #959595,
+  //inset -2px 0 0 #959595;
+  background-color: #fff;
+  font-size: 0;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    border: 1px solid #959595;
+    border-radius: 24px;
+  }
+
+  &__location,
+  &__addon {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &__addon {
+    width: 76px;
+    padding: 3px 0 3px 15px;
+  }
+  &__location {
+    min-width: calc(100% - 76px);
+    padding-left: 5px;
+  }
+
+  &__control {
+    width: 100%;
+    height: 64px;
+    font: 400 24px "MyriadPro";
+    border: none;
+
+  }
+}
+
+.addon-img {
+  display: block;
+  width: 56px;
+  height: 56px;
+  background: url(/grandfs-v/img/sprite_new.png)  -365px -339px;
+}

@@ -1,0 +1,167 @@
+
+.btn {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  color: #0d0000;
+  font: 400 24px "MyriadPro";
+  text-transform: uppercase;
+
+  &_search{
+    display: block;
+    width: 100%; //202px
+    height: 82px;
+    padding: 0;
+    font: 400 24px "MyriadPro";
+    border: 6px solid #fff;
+    border-radius: 30px;
+    background-color: #d1c1a7;
+  }
+  &_theme {
+    border: 6px solid #fff;
+    border-radius: 30px;
+    background-color: #d1c1a7;
+
+    &:hover {
+      opacity: .6;
+      -webkit-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+    }
+
+    &_small {
+      height: 100%;
+    }
+
+    &-brown {
+      background-color: #ac9b87;
+    }
+    &-gray {
+      background-color: #989793;
+    }
+
+    &-lightgray {
+      background-color: #b9b9b9;
+    }
+
+  }
+
+  &__img {
+    display: block;
+    position: absolute;
+    top: 21px;
+    left: 50%;
+    width: 174px;
+    height: 124px;
+    margin-left: -87px;
+
+    background-image: url(/grandTitul/img/sprite_new.png);
+    background-repeat: no-repeat;
+
+    &_small,
+    &_opposite {
+      top: 13px;
+      width: 68px;
+      height: 68px;
+    }
+
+    &_small {
+      left: 10px;
+    }
+    &_opposite {
+      left: 80%;
+    }
+
+    &_sofa {
+      background-position: 0 0;
+    }
+    &_kitchen {
+      background-position: -174px 0;
+    }
+    &_sanitary {
+      background-position: -348px 0;
+    }
+    &_bed {
+      background-position: -522px 0;
+    }
+    &_table-chair {
+      background-position: -174px -248px;
+    }
+    &_children-furniture {
+      background-position: -522px -125px;
+    }
+    &_light {
+      background-position: -348px -124px;
+    }
+    &_wardrobe {
+      background-position: -174px  -124px;
+    }
+    &_other {
+      background-position: 0 -248px;
+    }
+    &_restaurant {
+      background-position: 0 -124px;
+    }
+
+    &_salons {
+      top: 77px;
+      width: 245px;
+      height: 245px;
+      margin-left: -125px;
+      background-position: 0 -389px;
+    }
+
+    &_info {
+      background-position: -602px -261px;
+      margin-left: 0;
+    }
+
+    &_discounts {
+      background-position: -356px -261px;
+      margin-left: 0;
+    }
+
+    &_toilet {
+      background-position: -520px -261px;
+      margin-left: 0;
+    }
+
+    &_where {
+      background-position: -438px -261px;
+      margin-left: 0;
+    }
+
+  }
+
+  &__text {
+    position: absolute;
+    left: 0;
+    bottom: 11px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    //font: inherit;
+
+    font: 400 30px/1 "Myriad Pro";
+    &_salons {
+      font: 400 60px/1 "Myriad Pro";
+      bottom: 37px;
+      letter-spacing: 3px;
+    }
+    &_small {
+      bottom: 50%;
+      margin-bottom: -21px;
+      & .btn__text-word {
+        padding-left: 70px;
+        &_opposite {
+          padding-left: 0;
+          padding-right: 70px;
+        }
+      }
+    }
+
+
+  }
+}

@@ -1,0 +1,47 @@
+.departments {
+
+    &__list {
+    display: table;
+    width: 100%;
+    padding:0;
+    margin:0;
+  }
+
+  &__item {
+    display: table-cell;
+    list-style-type: none;
+    width: 25%;
+    height: 220px;
+    padding: 5px;
+    vertical-align: top;
+
+    &_invested {
+      padding:0;}
+    &_main {
+      width: 50%;
+    }
+    &_small {
+      height: 110px;
+    }
+  /*
+
+    & > ul:first-child > & {
+      padding-top: 0;
+    }
+    & > ul:last-child > & {
+      padding-bottom: 0;
+    }
+
+    & > ul > & {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  */
+
+
+}
+
+
+}

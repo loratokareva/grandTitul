@@ -1,0 +1,722 @@
+/*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  font-family: Arial, sans-serif;
+  /* 1 */
+  font-size: 87.5%;
+  line-height: 1.71429em;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  line-height: 1.71429em;
+  /* Set 1 unit of vertical rhythm on the top and bottom margins. */
+  margin: 0.85714em 0; }
+
+h2 {
+  font-size: 1.5em;
+  line-height: 2.28571em;
+  margin: 1.14286em 0; }
+
+h3 {
+  font-size: 1.17em;
+  line-height: 1.4652em;
+  margin: 1.4652em 0; }
+
+h4 {
+  font-size: 1em;
+  line-height: 1.71429em;
+  margin: 1.71429em 0; }
+
+h5 {
+  font-size: 0.83em;
+  line-height: 2.0654em;
+  margin: 2.0654em 0; }
+
+h6 {
+  font-size: 0.67em;
+  line-height: 2.55864em;
+  margin: 2.55864em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Set 1 unit of vertical rhythm on the top and bottom margin.
+ */
+blockquote {
+  margin: 1.71429em 40px; }
+
+dl,
+ol,
+ul {
+  margin: 1.71429em 0; }
+
+/**
+ * Turn off margins on nested lists.
+ */
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin: 0; }
+
+dd {
+  margin: 0 0 0 40px; }
+
+ol,
+ul {
+  padding: 0 0 0 40px; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+figcaption,
+figure {
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1.71429em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * Add the correct display in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Set 1 unit of vertical rhythm on the top and bottom margin.
+ */
+p,
+pre {
+  margin: 1.71429em 0; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: Arial, sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.71429em;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  /**
+   * Remove the inner border and padding in Firefox.
+   */
+  /**
+   * Restore the focus styles unset by the previous rule.
+   */ }
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0; }
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText; }
+
+/**
+ * Show the overflow in Edge.
+ */
+input {
+  overflow: visible; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+  /**
+   * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+   */ }
+  [type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  color: inherit;
+  /* 2 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/*
+ * Add the correct display in IE 9-.
+ */
+menu {
+  display: block;
+  /*
+   * 1. Set 1 unit of vertical rhythm on the top and bottom margin.
+   * 2. Set consistent space for the list style image.
+   */
+  margin: 1.71429em 0;
+  /* 1 */
+  padding: 0 0 0 40px;
+  /* 2 */
+  /**
+   * Turn off margins on nested lists.
+   */ }
+  menu menu, ol menu, ul menu {
+    margin: 0; }
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("http://www.grandfs.ru/gr_nav/fonts/MyriadPro-Regular/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("http://www.grandfs.ru/gr_nav/fonts/MyriadPro-Regular/MyriadPro-Regular.otf") format("opentype"), url("http://www.grandfs.ru/gr_nav/fonts/MyriadPro-Regular/MyriadPro-Regular.woff") format("woff"), url("http://www.grandfs.ru/gr_nav/fonts/MyriadPro-Regular/MyriadPro-Regular.ttf") format("truetype"), url("http://www.grandfs.ru/gr_nav/fonts/MyriadPro-Regular/MyriadPro-Regular.svg#MyriadPro-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("http://www.grandfs.ru/gr_nav/fonts/MyriadPro-Semibold/MyriadPro-Semibold.eot?#iefix") format("embedded-opentype"), url("http://www.grandfs.ru/gr_nav/fonts/MyriadPro-Semibold/MyriadPro-Semibold.otf") format("opentype"), url("http://www.grandfs.ru/gr_nav/fonts/MyriadPro-Semibold/MyriadPro-Semibold.woff") format("woff"), url("http://www.grandfs.ru/gr_nav/fonts/MyriadPro-Semibold/MyriadPro-Semibold.ttf") format("truetype"), url("http://www.grandfs.ru/gr_nav/fonts/MyriadPro-Semibold/MyriadPro-Semibold.svg#MyriadPro-Semibold") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+body {
+  height: 100%;
+  min-width: 320px;
+  background: #d3cbb8;
+  font: 400 18px/24px "MyriadPro", Verdana;
+  color: #000; }
+
+:focus {
+  outline: none; }
+
+.container {
+  width: 1920px;
+  margin: 0 auto;
+  padding: 50px 86px 60px; }
+
+.departments__list {
+  display: table;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+.departments__item {
+  display: table-cell;
+  list-style-type: none;
+  width: 25%;
+  height: 220px;
+  padding: 5px;
+  vertical-align: top;
+  /*
+
+    & > ul:first-child > & {
+      padding-top: 0;
+    }
+    & > ul:last-child > & {
+      padding-bottom: 0;
+    }
+
+    & > ul > & {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  */ }
+  .departments__item_invested {
+    padding: 0; }
+  .departments__item_main {
+    width: 50%; }
+  .departments__item_small {
+    height: 110px; }
+
+.btn {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  color: #0d0000;
+  font: 400 24px "MyriadPro";
+  text-transform: uppercase; }
+  .btn_search {
+    display: block;
+    width: 100%;
+    height: 82px;
+    padding: 0;
+    font: 400 24px "MyriadPro";
+    border: 6px solid #fff;
+    border-radius: 30px;
+    background-color: #d1c1a7; }
+  .btn_theme {
+    border: 6px solid #fff;
+    border-radius: 30px;
+    background-color: #d1c1a7; }
+    .btn_theme:hover {
+      opacity: .6;
+      -webkit-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out; }
+    .btn_theme_small {
+      height: 100%; }
+    .btn_theme-brown {
+      background-color: #ac9b87; }
+    .btn_theme-gray {
+      background-color: #989793; }
+    .btn_theme-lightgray {
+      background-color: #b9b9b9; }
+  .btn__img {
+    display: block;
+    position: absolute;
+    top: 21px;
+    left: 50%;
+    width: 174px;
+    height: 124px;
+    margin-left: -87px;
+    background-image: url(/grandTitul/img/sprite_new.png);
+    background-repeat: no-repeat; }
+    .btn__img_small, .btn__img_opposite {
+      top: 13px;
+      width: 68px;
+      height: 68px; }
+    .btn__img_small {
+      left: 10px; }
+    .btn__img_opposite {
+      left: 80%; }
+    .btn__img_sofa {
+      background-position: 0 0; }
+    .btn__img_kitchen {
+      background-position: -174px 0; }
+    .btn__img_sanitary {
+      background-position: -348px 0; }
+    .btn__img_bed {
+      background-position: -522px 0; }
+    .btn__img_table-chair {
+      background-position: -174px -248px; }
+    .btn__img_children-furniture {
+      background-position: -522px -125px; }
+    .btn__img_light {
+      background-position: -348px -124px; }
+    .btn__img_wardrobe {
+      background-position: -174px  -124px; }
+    .btn__img_other {
+      background-position: 0 -248px; }
+    .btn__img_restaurant {
+      background-position: 0 -124px; }
+    .btn__img_salons {
+      top: 77px;
+      width: 245px;
+      height: 245px;
+      margin-left: -125px;
+      background-position: 0 -389px; }
+    .btn__img_info {
+      background-position: -602px -261px;
+      margin-left: 0; }
+    .btn__img_discounts {
+      background-position: -356px -261px;
+      margin-left: 0; }
+    .btn__img_toilet {
+      background-position: -520px -261px;
+      margin-left: 0; }
+    .btn__img_where {
+      background-position: -438px -261px;
+      margin-left: 0; }
+  .btn__text {
+    position: absolute;
+    left: 0;
+    bottom: 11px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    font: 400 30px/1 "Myriad Pro"; }
+    .btn__text_salons {
+      font: 400 60px/1 "Myriad Pro";
+      bottom: 37px;
+      letter-spacing: 3px; }
+    .btn__text_small {
+      bottom: 50%;
+      margin-bottom: -21px; }
+      .btn__text_small .btn__text-word {
+        padding-left: 70px; }
+        .btn__text_small .btn__text-word_opposite {
+          padding-left: 0;
+          padding-right: 70px; }
+
+input, textarea {
+  outline: none; }
+
+input:active, textarea:active {
+  outline: none; }
+
+.form-search {
+  font-size: 0;
+  width: 100%;
+  margin-bottom: -7px; }
+  .form-search__input, .form-search__button {
+    display: inline-block;
+    font-size: 16px;
+    padding: 0 5px;
+    vertical-align: text-bottom; }
+  .form-search__input {
+    min-width: calc(100% - 222px); }
+  .form-search__button {
+    width: 222px; }
+
+.input-inner {
+  position: relative;
+  border: 6px solid #b9b9b9;
+  border-radius: 30px;
+  padding: 3px 12px;
+  background-color: #fff;
+  font-size: 0; }
+  .input-inner:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 1px solid #959595;
+    border-radius: 24px; }
+  .input-inner__location, .input-inner__addon {
+    display: inline-block;
+    vertical-align: middle; }
+  .input-inner__addon {
+    width: 76px;
+    padding: 3px 0 3px 15px; }
+  .input-inner__location {
+    min-width: calc(100% - 76px);
+    padding-left: 5px; }
+  .input-inner__control {
+    width: 100%;
+    height: 64px;
+    font: 400 24px "MyriadPro";
+    border: none; }
+
+.addon-img {
+  display: block;
+  width: 56px;
+  height: 56px;
+  background: url(/grandfs-v/img/sprite_new.png) -365px -339px; }
+
+/*# sourceMappingURL=main.css.map */

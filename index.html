@@ -3,20 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Навигация | Главная</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="css/main.css">
-    <style>
-        * {
-            cursor: help;
-            box-sizing: border-box;
-        }
-
-
-    </style>
 </head>
 <body>
 <!--[if lt IE 9]>
@@ -24,7 +15,6 @@
     <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your
     experience.</p>
 <![endif]-->
-
 
 <main class="main-page" role="main">
     <div class="container">
@@ -35,7 +25,7 @@
                     <div class="form-search__input">
                         <div class="input-inner">
                             <div class="input-inner__location">
-                                <input class="input-inner__control" type="text" id="password" placeholder="Введите название">
+                                <input class="input-inner__control" type="text" name="search">
                             </div>
 
                             <div class="input-inner__addon">
@@ -142,7 +132,7 @@
                             <!--  Свет -->
                             <button class="btn btn_theme btn_theme-brown" id="light" data-link="/category/show/1/2/2/">
                                 <div class="btn__img btn__img_light"></div>
-                                <span class="btn__text"></span>
+                                <span class="btn__text">Свет</span>
                             </button>
                             <!--  /Свет -->
                         </li>
@@ -208,7 +198,7 @@
                                     data-link="/category/show/1/2/2/">
                                 <div class="btn__img btn__img_discounts btn__img_small"></div>
                                 <span class="btn__text btn__text_small">
-                                    <span class="btn__text-word">Акции и скидки</span>
+                                    <span class="btn__text-word btn__text-word_discounts">Акции и скидки</span>
                                 </span>
                             </button>
                             <!--  /Акции и скидки -->
@@ -238,9 +228,9 @@
                         <li class="departments__item departments__item_small">
                             <!--  Где я? -->
                             <button class="btn btn_theme btn_theme_small" id="where" data-link="/category/show/1/2/2/">
-                                <div class="btn__img btn__img_where btn__img_opposite"></div>
+                                <div class="btn__img btn__img_where btn__img_opposite-where"></div>
                                 <span class="btn__text btn__text_small">
-                                    <span class="btn__text-word btn__text-word_opposite">Где я?</span>
+                                    <span class="btn__text-word btn__text-word_opposite-where ">Где я?</span>
                                 </span>
                             </button>
                             <!--  /Где я? -->

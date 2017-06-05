@@ -1,22 +1,29 @@
 @import "normalize/import-now";
-
 @import "font";
+
+* {
+  cursor: none;
+  box-sizing: border-box;
+}
 
 body {
   height: 100%;
   min-width: 320px;
   background: #d3cbb8;
-  font: 400 18px/24px "MyriadPro", Verdana;
+  font: 400 18px/24px "Myriad Pro", Verdana;
   color: #000;
 }
-:focus {outline:none;}
+
+:focus {
+  outline: none;
+}
+
 .main-page {
 }
 
 .container {
   width: 1920px;
-  margin:0 auto;
-
+  margin: 0 auto;
   padding: 50px 86px 60px;
 }
 

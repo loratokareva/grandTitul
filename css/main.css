@@ -492,19 +492,23 @@ template {
 
 @font-face {
   font-family: 'MyriadPro';
-  src: url("http://www.grandfs.ru/gr_nav/fonts/MyriadPro-Regular/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("http://www.grandfs.ru/gr_nav/fonts/MyriadPro-Regular/MyriadPro-Regular.otf") format("opentype"), url("http://www.grandfs.ru/gr_nav/fonts/MyriadPro-Regular/MyriadPro-Regular.woff") format("woff"), url("http://www.grandfs.ru/gr_nav/fonts/MyriadPro-Regular/MyriadPro-Regular.ttf") format("truetype"), url("http://www.grandfs.ru/gr_nav/fonts/MyriadPro-Regular/MyriadPro-Regular.svg#MyriadPro-Regular") format("svg");
+  src: url("/grandTitul/fonts/MyriadPro-Regular/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("/grandTitul/fonts/MyriadPro-Regular/MyriadPro-Regular.otf") format("opentype"), url("/grandTitul/fonts/MyriadPro-Regular/MyriadPro-Regular.woff") format("woff"), url("/grandTitul/fonts/MyriadPro-Regular/MyriadPro-Regular.ttf") format("truetype"), url("/grandTitul/fonts/MyriadPro-Regular/MyriadPro-Regular.svg#MyriadPro-Regular") format("svg");
   font-weight: 400;
   font-style: normal; }
 @font-face {
   font-family: 'MyriadPro';
-  src: url("http://www.grandfs.ru/gr_nav/fonts/MyriadPro-Semibold/MyriadPro-Semibold.eot?#iefix") format("embedded-opentype"), url("http://www.grandfs.ru/gr_nav/fonts/MyriadPro-Semibold/MyriadPro-Semibold.otf") format("opentype"), url("http://www.grandfs.ru/gr_nav/fonts/MyriadPro-Semibold/MyriadPro-Semibold.woff") format("woff"), url("http://www.grandfs.ru/gr_nav/fonts/MyriadPro-Semibold/MyriadPro-Semibold.ttf") format("truetype"), url("http://www.grandfs.ru/gr_nav/fonts/MyriadPro-Semibold/MyriadPro-Semibold.svg#MyriadPro-Semibold") format("svg");
+  src: url("/grandTitul/fonts/MyriadPro-Semibold/MyriadPro-Semibold.eot?#iefix") format("embedded-opentype"), url("/grandTitul/fonts/MyriadPro-Semibold/MyriadPro-Semibold.otf") format("opentype"), url("/grandTitul/fonts/MyriadPro-Semibold/MyriadPro-Semibold.woff") format("woff"), url("/grandTitul/fonts/MyriadPro-Semibold/MyriadPro-Semibold.ttf") format("truetype"), url("/grandTitul/fonts/MyriadPro-Semibold/MyriadPro-Semibold.svg#MyriadPro-Semibold") format("svg");
   font-weight: 600;
   font-style: normal; }
+* {
+  cursor: none;
+  box-sizing: border-box; }
+
 body {
   height: 100%;
   min-width: 320px;
   background: #d3cbb8;
-  font: 400 18px/24px "MyriadPro", Verdana;
+  font: 400 18px/24px "Myriad Pro", Verdana;
   color: #000; }
 
 :focus {
@@ -524,7 +528,7 @@ body {
   display: table-cell;
   list-style-type: none;
   width: 25%;
-  height: 220px;
+  height: 222px;
   padding: 5px;
   vertical-align: top;
   /*
@@ -558,25 +562,26 @@ body {
   padding: 0;
   margin: 0;
   color: #0d0000;
-  font: 400 24px "MyriadPro";
+  font: 400 24px "Myriad Pro";
   text-transform: uppercase; }
   .btn_search {
     display: block;
     width: 100%;
     height: 82px;
     padding: 0;
-    font: 400 24px "MyriadPro";
+    font: 400 24px "Myriad Pro";
     border: 6px solid #fff;
-    border-radius: 30px;
+    border-radius: 24px;
     background-color: #d1c1a7; }
   .btn_theme {
     border: 6px solid #fff;
-    border-radius: 30px;
-    background-color: #d1c1a7; }
-    .btn_theme:hover {
-      opacity: .6;
-      -webkit-transition: all .3s ease-in-out;
-      transition: all .3s ease-in-out; }
+    border-radius: 24px;
+    background-color: #d1c1a7;
+    /*    &:hover {
+          opacity: .6;
+          -webkit-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+        }*/ }
     .btn_theme_small {
       height: 100%; }
     .btn_theme-brown {
@@ -588,52 +593,54 @@ body {
   .btn__img {
     display: block;
     position: absolute;
-    top: 21px;
+    top: 23px;
     left: 50%;
     width: 174px;
     height: 124px;
     margin-left: -87px;
     background-image: url(/grandTitul/img/sprite_new.png);
     background-repeat: no-repeat; }
-    .btn__img_small, .btn__img_opposite {
-      top: 13px;
+    .btn__img_small, .btn__img_opposite, .btn__img_opposite-where {
+      top: 8px;
       width: 68px;
       height: 68px; }
     .btn__img_small {
       left: 10px; }
     .btn__img_opposite {
-      left: 80%; }
+      left: 310px; }
+    .btn__img_opposite-where {
+      left: 329px; }
     .btn__img_sofa {
       background-position: 0 0; }
     .btn__img_kitchen {
-      background-position: -174px 0; }
+      background-position: -176px 0; }
     .btn__img_sanitary {
-      background-position: -348px 0; }
+      background-position: -346px 0; }
     .btn__img_bed {
-      background-position: -522px 0; }
+      background-position: -520px 0; }
     .btn__img_table-chair {
-      background-position: -174px -248px; }
+      background-position: -174px -251px; }
     .btn__img_children-furniture {
-      background-position: -522px -125px; }
+      background-position: -524px -127px; }
     .btn__img_light {
-      background-position: -348px -124px; }
+      background-position: -350px -129px; }
     .btn__img_wardrobe {
-      background-position: -174px  -124px; }
+      background-position: -172px  -127px; }
     .btn__img_other {
-      background-position: 0 -248px; }
+      background-position: -5px -256px; }
     .btn__img_restaurant {
-      background-position: 0 -124px; }
+      background-position: 3px -129px; }
     .btn__img_salons {
-      top: 77px;
+      top: 47px;
       width: 245px;
       height: 245px;
       margin-left: -125px;
       background-position: 0 -389px; }
     .btn__img_info {
-      background-position: -602px -261px;
+      background-position: -603px -260px;
       margin-left: 0; }
     .btn__img_discounts {
-      background-position: -356px -261px;
+      background-position: -357px -263px;
       margin-left: 0; }
     .btn__img_toilet {
       background-position: -520px -261px;
@@ -644,23 +651,28 @@ body {
   .btn__text {
     position: absolute;
     left: 0;
-    bottom: 11px;
+    bottom: 12px;
     display: block;
     text-align: center;
     width: 100%;
     font: 400 30px/1 "Myriad Pro"; }
     .btn__text_salons {
-      font: 400 60px/1 "Myriad Pro";
-      bottom: 37px;
+      font: 400 61px/1.1 "Myriad Pro";
+      bottom: 36px;
       letter-spacing: 3px; }
     .btn__text_small {
       bottom: 50%;
-      margin-bottom: -21px; }
+      margin-bottom: -17px; }
       .btn__text_small .btn__text-word {
-        padding-left: 70px; }
+        padding-left: 34px; }
+        .btn__text_small .btn__text-word_discounts {
+          padding-left: 73px; }
         .btn__text_small .btn__text-word_opposite {
           padding-left: 0;
-          padding-right: 70px; }
+          padding-right: 74px; }
+        .btn__text_small .btn__text-word_opposite-where {
+          padding-left: 0;
+          padding-right: 50px; }
 
 input, textarea {
   outline: none; }
@@ -696,7 +708,7 @@ input:active, textarea:active {
     left: 0;
     bottom: 0;
     right: 0;
-    border: 1px solid #959595;
+    border: 2px solid #959595;
     border-radius: 24px; }
   .input-inner__location, .input-inner__addon {
     display: inline-block;
@@ -706,17 +718,18 @@ input:active, textarea:active {
     padding: 3px 0 3px 15px; }
   .input-inner__location {
     min-width: calc(100% - 76px);
-    padding-left: 5px; }
+    padding-left: 5px;
+    position: relative; }
   .input-inner__control {
     width: 100%;
     height: 64px;
-    font: 400 24px "MyriadPro";
+    font: 400 24px "Myriad Pro";
     border: none; }
 
 .addon-img {
   display: block;
   width: 56px;
   height: 56px;
-  background: url(/grandfs-v/img/sprite_new.png) -365px -339px; }
+  background: url(/grandTitul/img/sprite_new.png) -365px -339px; }
 
 /*# sourceMappingURL=main.css.map */

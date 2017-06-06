@@ -5,10 +5,11 @@
 
     <script src="/common/jquery/js/jquery-1.12.4.js"></script>
     <script src="/common/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/locale/ru.js"></script>
     <script src="/common/bootstrap/js/bootstrap-datetimepicker.min.js"></script>
     <link href="/common/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/common/bootstrap/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
-
     <!--
     <script src="/common/bootstrap/js/jasny-bootstrap.min.js"></script>
     -->
@@ -33,6 +34,18 @@
         [data-form^="showhide-level"] {
             display: none;
         }
+
+        input[name="add"] {
+            display: none;
+        }
+
+        #addfield:checked ~ input[name="add"] {
+            display: block;
+            margin-left: 55px;
+            margin-top: -27px;
+            width: 50%;
+        }
+
     </style>
 
     <title> Первичная форма Колл-центра</title>
@@ -222,8 +235,6 @@
             <div class="form-check col-xs-9">
 
 
-
-
                 <div class="radio">
                     <label style="width: 100%">
                         <input type="radio" name="clientcategory" id="addfield" value="1"
@@ -234,16 +245,6 @@
 
                     </label>
                 </div>
-                <style>
-                    input[name="add"] {
-                        display: none;
-                    }
-
-                    #addfield:checked ~ input[name="add"] {
-                        display: block;
-                    }
-
-                </style>
 
 
                 <div class="radio">

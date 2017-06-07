@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document
    ========================================================================== */
@@ -519,11 +520,19 @@ body {
   margin: 0 auto;
   padding: 50px 86px 60px; }
 
+.title-page {
+  padding-right: 340px;
+  font: 400 48px/1 "Myriad Pro";
+  text-transform: uppercase;
+  text-align: center; }
+
 .departments__list {
   display: table;
   width: 100%;
   padding: 0;
   margin: 0; }
+  .departments__list_nav {
+    margin: 18px 0 24px; }
 .departments__item {
   display: table-cell;
   list-style-type: none;
@@ -531,28 +540,37 @@ body {
   height: 222px;
   padding: 5px;
   vertical-align: top;
-  /*
+    /*
 
-    & > ul:first-child > & {
-      padding-top: 0;
-    }
-    & > ul:last-child > & {
-      padding-bottom: 0;
+      & > ul:first-child > & {
+        padding-top: 0;
+      }
+      & > ul:last-child > & {
+        padding-bottom: 0;
+      }
+      & > ul > & {
+        padding-left: 0;
+        padding-right: 0;
+      }
     }
 
-    & > ul > & {
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
-
-  */ }
+    */ }
   .departments__item_invested {
     padding: 0; }
   .departments__item_main {
     width: 50%; }
   .departments__item_small {
     height: 110px; }
+  .departments__item_restaurant {
+    height: 221px; }
+  .departments__item_home {
+    height: 168px;
+    width: 168px; }
+  .departments__item_subject {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle; }
 
 .btn {
   position: relative;
@@ -590,6 +608,56 @@ body {
       background-color: #989793; }
     .btn_theme-lightgray {
       background-color: #b9b9b9; }
+  .btn .btn__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 159px; }
+    .btn .btn__background_nav {
+      height: 146px; }
+  .btn__pic {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-image: url(/grandTitul/img/sprite_new.png);
+    background-repeat: no-repeat; }
+    .btn__pic_cafe-fountain {
+      width: 90px;
+      height: 91px;
+      background-position: 0 -653px; }
+    .btn__pic_cafe-estetica {
+      width: 257px;
+      height: 36px;
+      background-position: -100px -653px; }
+    .btn__pic_cafe-unico {
+      width: 199px;
+      height: 77px;
+      margin-bottom: 23px;
+      background-position: -365px -653px; }
+    .btn__pic_cafe-kivayaki {
+      width: 234px;
+      height: 55px;
+      background-position: -100px -695px; }
+    .btn__pic_cafe-intepior {
+      width: 283px;
+      height: 27px;
+      background-position: -365px -616px; }
+    .btn__pic_cafe-vostochnoe {
+      width: 90px;
+      height: 91px;
+      background-position: 0 -653px; }
+    .btn__pic_home {
+      width: 82px;
+      height: 64px;
+      background-position: -507px -339px; }
+    .btn__pic_arrow {
+      width: 60px;
+      height: 60px;
+      background-position: -434px -339px; }
   .btn__img {
     display: block;
     position: absolute;
@@ -731,5 +799,32 @@ input:active, textarea:active {
   width: 56px;
   height: 56px;
   background: url(/grandTitul/img/sprite_new.png) -365px -339px; }
+
+.container_carousel {
+  width: 866px;
+  padding: 0; }
+
+.item-carousel {
+  width: 100%;
+  height: 652px; }
+  .item-carousel img {
+    display: block;
+    width: auto;
+    height: 100%; }
+
+/*
+.carousel-item-content {
+  width: 100%;
+  height: 652px;
+  position: relative;
+  display: block;
+   background: url('/grandTitul/img/slider/main.png');
+   background-position-x: 100%;
+   background-position-y: 100%;
+   background-repeat: no-repeat;
+   background-size: cover; ╨Ь╨░╤Б╤И╤В╨░╨▒╨╕╤А╤Г╨╡╨╝ ╤Д╨╛╨╜
+
+}
+*/
 
 /*# sourceMappingURL=main.css.map */

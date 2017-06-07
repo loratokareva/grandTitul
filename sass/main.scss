@@ -2,6 +2,7 @@
 @import "font";
 
 * {
+  //cursor: help;
   cursor: none;
   box-sizing: border-box;
 }
@@ -27,8 +28,22 @@ body {
   padding: 50px 86px 60px;
 }
 
+
+.title-page {
+  //height: 168px;
+  //line-height: 168px;
+  //margin: 0;
+  padding-right: 340px;
+  font: 400 48px/1 "Myriad Pro";
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+
 @import "departments/styles";
 @import "button/styles";
 @import "input/styles";
 
 
+@import "owl-carousel/common";

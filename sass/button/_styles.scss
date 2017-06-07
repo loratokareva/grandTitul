@@ -10,7 +10,7 @@
   font: 400 24px "Myriad Pro";
   text-transform: uppercase;
 
-  &_search{
+  &_search {
     display: block;
     width: 100%; //202px
     height: 82px;
@@ -25,11 +25,11 @@
     border-radius: 24px;
     background-color: #d1c1a7;
 
-/*    &:hover {
-      opacity: .6;
-      -webkit-transition: all .3s ease-in-out;
-      transition: all .3s ease-in-out;
-    }*/
+    /*    &:hover {
+          opacity: .6;
+          -webkit-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+        }*/
 
     &_small {
       height: 100%;
@@ -48,6 +48,80 @@
 
   }
 
+  .btn__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 159px;
+
+    &_nav {
+      height: 146px;
+    }
+  }
+
+  &__pic {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-image: url(/grandTitul/img/sprite_new.png);
+    background-repeat: no-repeat;
+
+    //  Logo restaurant
+    &_cafe {
+
+      &-fountain {
+        width: 90px;
+        height: 91px;
+        background-position: 0 -653px;
+      }
+      &-estetica {
+        width: 257px;
+        height: 36px;
+        background-position: -100px -653px;
+      }
+      &-unico {
+        width: 199px;
+        height: 77px;
+        margin-bottom: 23px;
+        background-position: -365px -653px;
+      }
+      &-kivayaki {
+        width: 234px;
+        height: 55px;
+        background-position: -100px -695px;
+      }
+      &-intepior {
+        width: 283px;
+        height: 27px;
+        //margin-bottom: px;
+        background-position: -365px -616px;
+      }
+      &-vostochnoe {
+        width: 90px;
+        height: 91px;
+        background-position: 0 -653px;
+      }
+    }
+
+    // navigation
+
+    &_home {
+      width: 82px;
+      height: 64px;
+      background-position: -507px -339px;
+    }
+    &_arrow {
+      width: 60px;
+      height: 60px;
+      background-position: -434px -339px;
+    }
+
+  }
+
   &__img {
     display: block;
     position: absolute;
@@ -62,7 +136,7 @@
 
     &_small,
     &_opposite,
-    &_opposite-where{
+    &_opposite-where {
       top: 8px;
       width: 68px;
       height: 68px;
@@ -78,7 +152,6 @@
     &_opposite-where {
       left: 329px;
     }
-
 
     &_sofa {
       background-position: 0 0;
@@ -151,6 +224,7 @@
     //font: inherit;
 
     font: 400 30px/1 "Myriad Pro";
+
     &_salons {
       font: 400 61px/1.1 "Myriad Pro";
       bottom: 36px;

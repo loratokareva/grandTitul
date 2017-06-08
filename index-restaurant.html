@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Навигация Гранд | Рестораны</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/common/jquery/OwlCarousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="/common/jquery/OwlCarousel/css/owl.theme.green.css">
+    <link rel="stylesheet" href="/grandTitul/css/main.css">
+</head>
+<body>
+
+<main class="main-page" role="main">
+    <div class="container">
+        <section class="departments">
+
+            <!-- Поиск -->
+            <form action="">
+                <section class="form-search">
+                    <div class="form-search__input">
+                        <div class="input-inner">
+                            <div class="input-inner__location">
+                                <input class="input-inner__control" type="text" name="search">
+                            </div>
+
+                            <div class="input-inner__addon">
+                                <span class="addon-img"></span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="form-search__button">
+                        <button class="btn btn_search" type="submit">
+                            Найти
+                        </button>
+                    </div>
+
+                </section>
+            </form>
+            <!-- /Поиск -->
+
+
+                    <!-- Панель навигации -->
+                    <ul class="departments__list departments__list_nav">
+                        <li class="departments__item departments__item_home">
+                            <!-- Домой  -->
+                            <button class="btn btn_theme btn_theme-brown">
+                                <span class="btn__background btn__background_nav">
+                                    <span class="btn__pic btn__pic_home"></span>
+                                </span>
+                            </button>
+                            <!-- /Домой  -->
+                        </li>
+                        <li class="departments__item departments__item_home">
+                            <!-- возврат  -->
+                            <button class="btn btn_theme btn_theme-brown">
+                                <span class="btn__background btn__background_nav">
+                                    <span class="btn__pic btn__pic_arrow"></span>
+                                </span>
+                            </button>
+                            <!-- / возврат -->
+                        </li>
+                        <li class="departments__item departments__item_home  departments__item_subject">
+                            <!--  Заголовок страницы -->
+                                <h1 class="title-page">
+                                    Рестораны
+                                </h1>
+                            <!-- /Заголовок страницы  -->
+                        </li>
+                    </ul>
+                    <!-- /Панель навигации -->
+
+
+            <!-- центральный блок -->
+            <ul class="departments__list">
+
+                <li class="departments__item departments__item_carousel">
+                    <!-- carousel -->
+                    <div class="container container_grand container_carousel">
+                        <div id="grand-carousel" class="owl-carousel">
+                            <!-- слайдер 1-->
+                            <div class="item-carousel">
+                                <img src="/grandTitul/img/slider/main.png" alt="">
+                            </div>
+                            <!-- /слайдер 1-->
+                            <!-- слайдер 2-->
+                            <div class="item-carousel">
+                                <img src="/grandTitul/img/slider/restaurant.png" alt="">
+                            </div>
+                            <!-- /слайдер 2-->
+                        </div>
+                    </div>
+                    <!-- /carousel -->
+                </li>
+                <!-- левый столбец кнопок -->
+                <li class="departments__item departments__item_invested">
+                    <!-- верхний  мелкий -->
+                    <ul class="departments__list">
+                        <li class="departments__item departments__item_restaurant">
+                            <!--   -->
+                            <button class="btn btn_theme btn_theme-brown" data-link="url-page">
+                                <span class="btn__background">
+                                    <span class="btn__pic btn__pic_cafe-fountain"></span>
+                                </span>
+                                <span class="btn__text">Кафе "У фонтана"</span>
+                            </button>
+                            <!-- /  -->
+                        </li>
+                    </ul>
+                    <!-- /верхний  мелкий -->
+                    <!-- средний  мелкий -->
+                    <ul class="departments__list">
+                        <li class="departments__item departments__item_restaurant">
+                            <!--   -->
+                            <button class="btn btn_theme btn_theme-brown" data-link="url-page">
+                                <span class="btn__background">
+                                    <span class="btn__pic btn__pic_cafe-estetica"></span>
+                                </span>
+                                <span class="btn__text">Кафе "Estetica"</span>
+                            </button>
+                            <!-- /  -->
+                        </li>
+                    </ul>
+                    <!-- /средний  мелкий -->
+                    <!-- нижний мелкий  -->
+                    <ul class="departments__list">
+                        <li class="departments__item departments__item_restaurant">
+                            <!--   -->
+                            <button class="btn btn_theme btn_theme-gray" data-link="url-page">
+                                <span class="btn__background">
+                                    <span class="btn__pic btn__pic_cafe-unico"></span>
+                                </span>
+                                <span class="btn__text">Кафе "Unico"</span>
+                            </button>
+                            <!-- /  -->
+                        </li>
+                    </ul>
+                    <!-- /нижний мелкий  -->
+                </li>
+                <!-- /левый столбец кнопок -->
+                <!-- правый столбец кнопок -->
+                <li class="departments__item  departments__item_invested">
+                    <!-- верхний  мелкий -->
+                    <ul class="departments__list">
+                        <li class="departments__item departments__item_restaurant">
+                            <!--   -->
+                            <button class="btn btn_theme btn_theme-brown" data-link="url-page">
+                                <span class="btn__background">
+                                    <span class="btn__pic btn__pic_cafe-kivayaki"></span>
+                                </span>
+                                <span class="btn__text">Кафе "Киваяки"</span>
+                            </button>
+                            <!--  / -->
+                        </li>
+                    </ul>
+                    <!-- /верхний  мелкий -->
+                    <!-- средний  мелкий -->
+                    <ul class="departments__list">
+                        <li class="departments__item departments__item_restaurant">
+                            <!--   -->
+                            <button class="btn btn_theme btn_theme-brown" data-link="url-page">
+                                <span class="btn__background">
+                                    <span class="btn__pic btn__pic_cafe-intepior"></span>
+                                </span>
+                                <span class="btn__text">Кафе "Intepior"</span>
+                            </button>
+                            <!-- /  -->
+                        </li>
+                    </ul>
+                    <!-- /средний  мелкий -->
+                    <!-- нижний мелкий  -->
+                    <ul class="departments__list">
+                        <li class="departments__item departments__item_restaurant">
+                            <!--   -->
+                            <button class="btn btn_theme btn_theme-lightgray" data-link="url-page">
+                                <span class="btn__background">
+                                    <span class="btn__pic btn__pic_cafe-vostochnoe"></span>
+                                </span>
+                                <span class="btn__text">Кафе "Восточное"</span>
+                            </button>
+                            <!--  / -->
+                        </li>
+                    </ul>
+                    <!-- /нижний мелкий  -->
+                </li>
+                <!-- /правый столбец кнопок -->
+            </ul>
+            <!-- /центральный блок -->
+        </section>
+    </div>
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/common/bootstrap/js/bootstrap.min.js"></script>
+<script src="/common/jquery/OwlCarousel/js/owl.carousel.js"></script>
+<script>
+    $(function () {
+        $("#grand-carousel").owlCarousel({
+            nav: false,
+            dots: false,
+            loop: true,
+            slideSpeed: 500,
+            autoplay: true,
+            autoplayTimeout: 4500,
+
+            items: 1,
+            itemsDesktop: false,
+            itemsDesktopSmall: false,
+            itemsTablet: false,
+            itemsMobile: false
+
+        });
+    });
+</script>
+</body>
+</html>
+

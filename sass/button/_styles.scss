@@ -7,7 +7,7 @@
   padding: 0;
   margin: 0;
   color: #0d0000;
-  font: 400 24px "Myriad Pro";
+  font: 400 24px "Myriad Pro", Verdana, Arial, Helvetica, sans-serif;
   text-transform: uppercase;
 
   &_search {
@@ -15,7 +15,7 @@
     width: 100%; //202px
     height: 82px;
     padding: 0;
-    font: 400 24px "Myriad Pro";
+    font: 400 24px "Myriad Pro", Verdana, Arial, Helvetica, sans-serif;
     border: 6px solid #fff;
     border-radius: 24px;
     background-color: #d1c1a7;
@@ -48,7 +48,9 @@
 
   }
 
+
   .btn__background {
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
@@ -58,16 +60,26 @@
     &_nav {
       height: 146px;
     }
+
+    &_salons {
+      height: 333px;
+    }
+
+  }
+
+  &__pic,
+  &__img {
+    display: block;
+    position: absolute;
   }
 
   &__pic {
-    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
-    background-image: url(/grandTitul/img/sprite_new.png);
+    background-image: url(/grandTitul/img/sprite.png);
     background-repeat: no-repeat;
 
     //  Logo restaurant
@@ -107,8 +119,8 @@
       }
     }
 
-    // navigation
 
+    // navigation
     &_home {
       width: 82px;
       height: 64px;
@@ -120,18 +132,72 @@
       background-position: -434px -339px;
     }
 
+    // first page
+    &_sofa {
+      width: 154px;
+      height: 108px;
+      background-position: -9px -16px;
+    }
+    &_kitchen {
+      width: 168px;
+      height: 107px;
+      background-position: -175px -16px;
+    }
+    &_sanitary {
+      width: 132px;
+      height: 124px;
+      background-position: -369px 0;
+    }
+    &_bed {
+      width: 144px;
+      height: 88px;
+      background-position: -537px -36px;
+    }
+    &_table-chair {
+      width: 151px;
+      height: 107px;
+      background-position: -187px -264px;
+    }
+    &_children-furniture {
+      width: 120px;
+      height: 120px;
+      background-position: -551px -128px;
+    }
+    &_light {
+      width: 106px;
+      height: 111px;
+      background-position: -384px -137px;
+    }
+    &_wardrobe {
+      width: 107px;
+      height: 107px;
+      background-position: -207px -140px;
+    }
+    &_other {
+      width: 113px;
+      height: 94px;
+      background-position: -31px -277px;
+    }
+    &_restaurant {
+      width: 152px;
+      height: 104px;
+      background-position: -9px -143px;
+    }
+    &_salons {
+      width: 245px;
+      height: 245px;
+      background-position: 0 -389px;
+    }
+
   }
 
   &__img {
-    display: block;
-    position: absolute;
     top: 23px;
     left: 50%;
     width: 174px;
     height: 124px;
     margin-left: -87px;
-
-    background-image: url(/grandTitul/img/sprite_new.png);
+    background-image: url(/grandTitul/img/sprite.png);
     background-repeat: no-repeat;
 
     &_small,
@@ -152,6 +218,7 @@
     &_opposite-where {
       left: 329px;
     }
+    /*
 
     &_sofa {
       background-position: 0 0;
@@ -191,25 +258,24 @@
       margin-left: -125px;
       background-position: 0 -389px;
     }
-
+    */
+    &_info,
+    &_discounts,
+    &_toilet,
+    &_where {
+      margin-left: 0;
+    }
     &_info {
       background-position: -603px -260px;
-      margin-left: 0;
     }
-
     &_discounts {
       background-position: -357px -263px;
-      margin-left: 0;
     }
-
     &_toilet {
       background-position: -520px -261px;
-      margin-left: 0;
     }
-
     &_where {
       background-position: -438px -261px;
-      margin-left: 0;
     }
 
   }
@@ -222,11 +288,10 @@
     text-align: center;
     width: 100%;
     //font: inherit;
-
-    font: 400 30px/1 "Myriad Pro";
+    font: 400 30px/1 "Myriad Pro", Verdana, Arial, Helvetica, sans-serif;
 
     &_salons {
-      font: 400 61px/1.1 "Myriad Pro";
+      font: 400 61px/1.1 "Myriad Pro", Verdana, Arial, Helvetica, sans-serif;
       bottom: 36px;
       letter-spacing: 3px;
     }
@@ -248,7 +313,6 @@
         }
       }
     }
-
 
   }
 }

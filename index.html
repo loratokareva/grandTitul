@@ -2,24 +2,15 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Навигация | Главная</title>
+    <title>Навигация Гранд | Главная</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/grandTitul/css/main.css">
 </head>
 <body>
-<!--[if lt IE 9]>
-<p class="browserupgrade" style="color: #fff;background: #000;padding: 20px 15px; text-align: center;">You are using an
-    <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your
-    experience.</p>
-<![endif]-->
-
 <main class="main-page" role="main">
     <div class="container">
         <section class="departments">
-
+            <!-- Поиск -->
             <form action="">
                 <section class="form-search">
                     <div class="form-search__input">
@@ -42,15 +33,17 @@
 
                 </section>
             </form>
-
+            <!-- /Поиск -->
 
 
             <!-- верхний ряд кнопок-->
             <ul class="departments__list">
                 <li class="departments__item">
                     <!--  Диваны-Кресла -->
-                    <button class="btn btn_theme" id="sofa" data-link="/category/show/1/2/2/">
-                        <div class="btn__img btn__img_sofa"></div>
+                    <button class="btn btn_theme" id="sofa" data-link="url-page">
+                        <span class="btn__background">
+                            <span class="btn__pic btn__pic_sofa"></span>
+                        </span>
                         <span class="btn__text">Диваны/Кресла</span>
                     </button>
                     <!-- /Диваны-Кресла  -->
@@ -58,8 +51,10 @@
 
                 <li class="departments__item">
                     <!--  Кухни -->
-                    <button class="btn btn_theme btn_theme-gray" id="kitchen" data-link="/category/show/1/2/2/">
-                        <div class="btn__img btn__img_kitchen"></div>
+                    <button class="btn btn_theme btn_theme-gray" id="kitchen" data-link="url-page">
+                        <span class="btn__background">
+                            <span class="btn__pic btn__pic_kitchen"></span>
+                        </span>
                         <span class="btn__text">Кухни</span>
                     </button>
                     <!--  /Кухни -->
@@ -67,8 +62,10 @@
 
                 <li class="departments__item">
                     <!-- Сантехника  -->
-                    <button class="btn btn_theme btn_theme-lightgray" id="sanitary" data-link="/category/show/1/2/2/">
-                        <div class="btn__img btn__img_sanitary"></div>
+                    <button class="btn btn_theme btn_theme-lightgray" id="sanitary" data-link="url-page">
+                        <span class="btn__background">
+                            <span class="btn__pic btn__pic_sanitary"></span>
+                        </span>
                         <span class="btn__text">Сантехника</span>
                     </button>
                     <!-- /Сантехника  -->
@@ -76,8 +73,10 @@
 
                 <li class="departments__item">
                     <!-- Кровати-Матрасы  -->
-                    <button class="btn btn_theme" id="bed" data-link="/category/show/1/2/2/">
-                        <div class="btn__img btn__img_bed"></div>
+                    <button class="btn btn_theme" id="bed" data-link="url-page">
+                        <span class="btn__background">
+                            <span class="btn__pic btn__pic_bed"></span>
+                        </span>
                         <span class="btn__text">Кровати/Матрасы</span>
                     </button>
                     <!-- /Кровати-Матрасы  -->
@@ -93,8 +92,10 @@
                         <li class="departments__item">
                             <!-- Столы-Стулья  -->
                             <button class="btn btn_theme btn_theme-brown" id="table-chair"
-                                    data-link="/category/show/1/2/2/">
-                                <div class="btn__img btn__img_table-chair"></div>
+                                    data-link="url-page">
+                                <span class="btn__background">
+                                    <span class="btn__pic btn__pic_table-chair"></span>
+                                </span>
                                 <span class="btn__text">Столы/Стулья</span>
                             </button>
                             <!-- /Столы-Стулья  -->
@@ -106,8 +107,10 @@
                         <li class="departments__item">
                             <!--  Детская мебель -->
                             <button class="btn btn_theme btn_theme-gray" id="children-furniture"
-                                    data-link="/category/show/1/2/2/">
-                                <div class="btn__img btn__img_children-furniture"></div>
+                                    data-link="url-page">
+                                <span class="btn__background">
+                                    <span class="btn__pic btn__pic_children-furniture"></span>
+                                </span>
                                 <span class="btn__text">Детская мебель</span>
                             </button>
                             <!-- /Детская мебель  -->
@@ -118,8 +121,10 @@
 
                 <li class="departments__item departments__item_main">
                     <!--  Салоны -->
-                    <button class="btn btn_theme" id="salons" data-link="/category/show/1/2/2/">
-                        <div class="btn__img btn__img_salons"></div>
+                    <button class="btn btn_theme" id="salons" data-link="url-page">
+                        <span class="btn__background btn__background_salons">
+                            <span class="btn__pic btn__pic_salons"></span>
+                        </span>
                         <span class="btn__text btn__text_salons">Салоны</span>
                     </button>
                     <!-- /Салоны  -->
@@ -130,8 +135,10 @@
                     <ul class="departments__list">
                         <li class="departments__item">
                             <!--  Свет -->
-                            <button class="btn btn_theme btn_theme-brown" id="light" data-link="/category/show/1/2/2/">
-                                <div class="btn__img btn__img_light"></div>
+                            <button class="btn btn_theme btn_theme-brown" id="light" data-link="url-page">
+                                <span class="btn__background">
+                                    <span class="btn__pic btn__pic_light"></span>
+                                </span>
                                 <span class="btn__text">Свет</span>
                             </button>
                             <!--  /Свет -->
@@ -143,8 +150,10 @@
                         <li class="departments__item">
                             <!--  Шкафы -->
                             <button class="btn btn_theme btn_theme-lightgray" id="wardrobe"
-                                    data-link="/category/show/1/2/2/">
-                                <div class="btn__img btn__img_wardrobe"></div>
+                                    data-link="url-page">
+                                <span class="btn__background">
+                                    <span class="btn__pic btn__pic_wardrobe"></span>
+                                </span>
                                 <span class="btn__text">Шкафы</span>
                             </button>
                             <!--  /Шкафы -->
@@ -158,8 +167,10 @@
             <ul class="departments__list">
                 <li class="departments__item">
                     <!-- Другое  -->
-                    <button class="btn btn_theme btn_theme-lightgray" id="other" data-link="/category/show/1/2/2/">
-                        <div class="btn__img btn__img_other"></div>
+                    <button class="btn btn_theme btn_theme-lightgray" id="other" data-link="url-page">
+                        <span class="btn__background">
+                            <span class="btn__pic btn__pic_other"></span>
+                        </span>
                         <span class="btn__text">Другое</span>
                     </button>
                     <!-- /Другое  -->
@@ -167,8 +178,10 @@
 
                 <li class="departments__item">
                     <!--  Рестораны и кафе -->
-                    <button class="btn btn_theme btn_theme-gray" id="restaurant" data-link="/category/show/1/2/2/">
-                        <div class="btn__img btn__img_restaurant"></div>
+                    <button class="btn btn_theme btn_theme-gray" id="restaurant" data-link="url-page">
+                        <span class="btn__background">
+                            <span class="btn__pic btn__pic_restaurant"></span>
+                        </span>
                         <span class="btn__text">Рестораны и кафе</span>
                     </button>
                     <!-- /Рестораны и кафе  -->
@@ -180,8 +193,8 @@
                         <li class="departments__item departments__item_small">
                             <!-- Информация-Услуги  -->
                             <button class="btn btn_theme btn_theme_small btn_theme-lightgray" id="info"
-                                    data-link="/category/show/1/2/2/">
-                                <div class="btn__img btn__img_info btn__img_small"></div>
+                                    data-link="url-page">
+                                <span class="btn__img btn__img_info btn__img_small"></span>
                                 <span class="btn__text btn__text_small">
                                     <span class="btn__text-word">Информация/Услуги</span>
                                 </span>
@@ -195,8 +208,8 @@
                         <li class="departments__item departments__item_small">
                             <!-- Акции и скидки  -->
                             <button class="btn btn_theme btn_theme_small" id="discounts"
-                                    data-link="/category/show/1/2/2/">
-                                <div class="btn__img btn__img_discounts btn__img_small"></div>
+                                    data-link="url-page">
+                                <span class="btn__img btn__img_discounts btn__img_small"></span>
                                 <span class="btn__text btn__text_small">
                                     <span class="btn__text-word btn__text-word_discounts">Акции и скидки</span>
                                 </span>
@@ -213,8 +226,8 @@
                         <li class="departments__item departments__item_small">
                             <!--  Туалет -->
                             <button class="btn btn_theme btn_theme_small  btn_theme-brown" id="toilet"
-                                    data-link="/category/show/1/2/2/">
-                                <div class="btn__img btn__img_toilet  btn__img_opposite"></div>
+                                    data-link="url-page">
+                                <span class="btn__img btn__img_toilet  btn__img_opposite"></span>
                                 <span class="btn__text btn__text_small">
                                     <span class="btn__text-word btn__text-word_opposite">Туалет</span>
                                 </span>
@@ -227,8 +240,8 @@
                     <ul class="departments__list">
                         <li class="departments__item departments__item_small">
                             <!--  Где я? -->
-                            <button class="btn btn_theme btn_theme_small" id="where" data-link="/category/show/1/2/2/">
-                                <div class="btn__img btn__img_where btn__img_opposite-where"></div>
+                            <button class="btn btn_theme btn_theme_small" id="where" data-link="url-page">
+                                <span class="btn__img btn__img_where btn__img_opposite-where"></span>
                                 <span class="btn__text btn__text_small">
                                     <span class="btn__text-word btn__text-word_opposite-where ">Где я?</span>
                                 </span>

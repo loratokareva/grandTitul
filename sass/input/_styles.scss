@@ -61,7 +61,7 @@ input:active, textarea:active {
   &__control {
     width: 100%;
     height: 64px;
-    font: 400 24px "Myriad Pro";
+    font: 400 24px "Myriad Pro", Verdana, Arial, Helvetica, sans-serif;
     border: none;
 
   }
@@ -71,5 +71,5 @@ input:active, textarea:active {
   display: block;
   width: 56px;
   height: 56px;
-  background: url(/grandTitul/img/sprite_new.png)  -365px -339px;
+  background: url(/grandTitul/img/sprite.png)  -365px -339px;
 }

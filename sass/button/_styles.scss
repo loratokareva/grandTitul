@@ -65,6 +65,10 @@
       height: 333px;
     }
 
+    &_two-lines {
+      height: 146px;
+    }
+
   }
 
   &__pic,
@@ -189,6 +193,93 @@
       background-position: 0 -389px;
     }
 
+
+    // info
+    &_exchange {
+      width: 131px;
+      height: 85px;
+      background-position: -263px -412px;
+    }
+
+    &_info {
+      width: 26px;
+      height: 98px;
+      background-position: -263px -508px;
+    }
+
+    &_playroom {
+      width: 132px;
+      height: 119px;
+      background-position: -665px -627px;
+    }
+
+    &_atm {
+      width: 86px;
+      height: 123px;
+      background-position: -699px 0;
+    }
+
+    &_delivery {
+      width: 167px;
+      height: 114px;
+      background-position: -409px -412px;
+    }
+
+
+    &_checkroom {
+      width: 144px;
+      height: 102px;
+      background-position: -653px -309px;
+    }
+
+      // bank
+
+
+    &_bank-zenit {
+      width: 152px;
+      height: 105px;
+      background-position: -585px -420px;
+    }
+    &_card-payment{
+      width: 129px;
+      height: 113px;
+      background-position: -671px -182px;
+    }
+    &_credit {
+      width: 99px;
+      height: 128px;
+      background-position: -798px 0;
+    }
+    &_cash-payment {
+      width: 160px;
+      height: 104px;
+      background-position: -765px -425px;
+    }
+    &_exchange-euro {
+      width: 126px;
+      height: 111px;
+      background-position: -818px -134px;
+    }
+
+
+
+    /*
+  &_ {
+     width: px;
+     height: px;
+     background-position: -px -px;
+   }
+
+    */
+
+
+
+
+
+
+
+
+
   }
 
   &__img {
@@ -283,18 +374,22 @@
   &__text {
     position: absolute;
     left: 0;
-    bottom: 12px;
+    bottom: 16px;  // 12
     display: block;
     text-align: center;
     width: 100%;
     //font: inherit;
-    font: 400 30px/1 "Myriad Pro", Verdana, Arial, Helvetica, sans-serif;
+    font: 400 30px/0.9 "Myriad Pro", Verdana, Arial, Helvetica, sans-serif;
 
     &_salons {
       font: 400 61px/1.1 "Myriad Pro", Verdana, Arial, Helvetica, sans-serif;
       bottom: 36px;
       letter-spacing: 3px;
     }
+    &_two-lines {
+      bottom: 3px;
+    }
+
     &_small {
       bottom: 50%;
       margin-bottom: -17px;

@@ -563,7 +563,7 @@ body {
     width: 50%; }
   .departments__item_small {
     height: 110px; }
-  .departments__item_restaurant {
+  .departments__item_restaurant, .departments__item_bank, .departments__item_info {
     height: 221px; }
   .departments__item_home {
     height: 178px;
@@ -621,6 +621,8 @@ body {
       height: 146px; }
     .btn .btn__background_salons {
       height: 333px; }
+    .btn .btn__background_two-lines {
+      height: 146px; }
   .btn__pic, .btn__img {
     display: block;
     position: absolute; }
@@ -631,7 +633,15 @@ body {
     right: 0;
     margin: auto;
     background-image: url(/grandTitul/img/sprite.png);
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    /*
+  &_ {
+     width: px;
+     height: px;
+     background-position: -px -px;
+   }
+
+    */ }
     .btn__pic_cafe-fountain {
       width: 90px;
       height: 91px;
@@ -709,6 +719,50 @@ body {
       width: 245px;
       height: 245px;
       background-position: 0 -389px; }
+    .btn__pic_exchange {
+      width: 131px;
+      height: 85px;
+      background-position: -263px -412px; }
+    .btn__pic_info {
+      width: 26px;
+      height: 98px;
+      background-position: -263px -508px; }
+    .btn__pic_playroom {
+      width: 132px;
+      height: 119px;
+      background-position: -665px -627px; }
+    .btn__pic_atm {
+      width: 86px;
+      height: 123px;
+      background-position: -699px 0; }
+    .btn__pic_delivery {
+      width: 167px;
+      height: 114px;
+      background-position: -409px -412px; }
+    .btn__pic_checkroom {
+      width: 144px;
+      height: 102px;
+      background-position: -653px -309px; }
+    .btn__pic_bank-zenit {
+      width: 152px;
+      height: 105px;
+      background-position: -585px -420px; }
+    .btn__pic_card-payment {
+      width: 129px;
+      height: 113px;
+      background-position: -671px -182px; }
+    .btn__pic_credit {
+      width: 99px;
+      height: 128px;
+      background-position: -798px 0; }
+    .btn__pic_cash-payment {
+      width: 160px;
+      height: 104px;
+      background-position: -765px -425px; }
+    .btn__pic_exchange-euro {
+      width: 126px;
+      height: 111px;
+      background-position: -818px -134px; }
   .btn__img {
     top: 23px;
     left: 50%;
@@ -781,15 +835,17 @@ body {
   .btn__text {
     position: absolute;
     left: 0;
-    bottom: 12px;
+    bottom: 16px;
     display: block;
     text-align: center;
     width: 100%;
-    font: 400 30px/1 "Myriad Pro", Verdana, Arial, Helvetica, sans-serif; }
+    font: 400 30px/0.9 "Myriad Pro", Verdana, Arial, Helvetica, sans-serif; }
     .btn__text_salons {
       font: 400 61px/1.1 "Myriad Pro", Verdana, Arial, Helvetica, sans-serif;
       bottom: 36px;
       letter-spacing: 3px; }
+    .btn__text_two-lines {
+      bottom: 3px; }
     .btn__text_small {
       bottom: 50%;
       margin-bottom: -17px; }

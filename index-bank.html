@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Навигация Гранд | Рестораны</title>
+    <title>Навигация Гранд | Банки/кассы/обмен валют</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="/common/jquery/OwlCarousel/css/owl.carousel.css">
     <link rel="stylesheet" href="/common/jquery/OwlCarousel/css/owl.theme.green.css">
@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<main class="main-page" role="main">
+<main class="main-page">
     <div class="container">
         <section class="departments">
 
@@ -40,41 +40,42 @@
             <!-- /Поиск -->
 
 
-                    <!-- Панель навигации -->
-                    <ul class="departments__list departments__list_nav">
-                        <li class="departments__item departments__item_home">
-                            <!-- Домой  -->
-                            <button class="btn btn_theme">
+            <!-- Панель навигации -->
+            <ul class="departments__list departments__list_nav">
+                <li class="departments__item departments__item_home">
+                    <!-- Домой  -->
+                    <button class="btn btn_theme">
                                 <span class="btn__background btn__background_nav">
                                     <span class="btn__pic btn__pic_home"></span>
                                 </span>
-                            </button>
-                            <!-- /Домой  -->
-                        </li>
-                        <li class="departments__item departments__item_home">
-                            <!-- возврат  -->
-                            <button class="btn btn_theme">
+                    </button>
+                    <!-- /Домой  -->
+                </li>
+                <li class="departments__item departments__item_home">
+                    <!-- возврат  -->
+                    <button class="btn btn_theme">
                                 <span class="btn__background btn__background_nav">
                                     <span class="btn__pic btn__pic_arrow"></span>
                                 </span>
-                            </button>
-                            <!-- / возврат -->
-                        </li>
-                        <li class="departments__item departments__item_home  departments__item_subject">
-                            <!--  Заголовок страницы -->
-                                <h1 class="title-page">
-                                    Рестораны
-                                </h1>
-                            <!-- /Заголовок страницы  -->
-                        </li>
-                    </ul>
-                    <!-- /Панель навигации -->
+                    </button>
+                    <!-- / возврат -->
+                </li>
+                <li class="departments__item departments__item_home  departments__item_subject">
+                    <!--  Заголовок страницы -->
+                    <h1 class="title-page">
+                        Банки/кассы/обмен валют
+                    </h1>
+                    <!-- /Заголовок страницы  -->
+                </li>
+            </ul>
+            <!-- /Панель навигации -->
 
 
             <!-- центральный блок -->
             <ul class="departments__list">
 
                 <li class="departments__item departments__item_carousel">
+
                     <!-- carousel -->
                     <div class="container container_grand container_carousel">
                         <div id="grand-carousel" class="owl-carousel">
@@ -91,18 +92,21 @@
                         </div>
                     </div>
                     <!-- /carousel -->
+
                 </li>
                 <!-- левый столбец кнопок -->
                 <li class="departments__item departments__item_invested">
                     <!-- верхний  мелкий -->
                     <ul class="departments__list">
-                        <li class="departments__item departments__item_restaurant">
-                            <!--   -->
+                        <li class="departments__item departments__item_bank">
+                            <!--  -->
                             <button class="btn btn_theme btn_theme-brown" data-link="url-page">
                                 <span class="btn__background">
-                                    <span class="btn__pic btn__pic_cafe-fountain"></span>
+                                    <span class="btn__pic btn__pic_bank-zenit"></span>
                                 </span>
-                                <span class="btn__text">Кафе "У фонтана"</span>
+                                <span class="btn__text">
+                                    отделение банка зенит
+                                </span>
                             </button>
                             <!-- /  -->
                         </li>
@@ -110,13 +114,15 @@
                     <!-- /верхний  мелкий -->
                     <!-- средний  мелкий -->
                     <ul class="departments__list">
-                        <li class="departments__item departments__item_restaurant">
+                        <li class="departments__item departments__item_bank">
                             <!--   -->
                             <button class="btn btn_theme btn_theme-gray" data-link="url-page">
-                                <span class="btn__background">
-                                    <span class="btn__pic btn__pic_cafe-estetica"></span>
+                                <span class="btn__background btn__background_two-lines">
+                                    <span class="btn__pic btn__pic_card-payment"></span>
                                 </span>
-                                <span class="btn__text">Кафе "Estetica"</span>
+                                <span class="btn__text btn__text_two-lines">
+                                    касса оплаты<br>безналичным расчетом
+                                </span>
                             </button>
                             <!-- /  -->
                         </li>
@@ -124,13 +130,15 @@
                     <!-- /средний  мелкий -->
                     <!-- нижний мелкий  -->
                     <ul class="departments__list">
-                        <li class="departments__item departments__item_restaurant">
+                        <li class="departments__item departments__item_bank">
                             <!--   -->
                             <button class="btn btn_theme btn_theme-lightgray" data-link="url-page">
                                 <span class="btn__background">
-                                    <span class="btn__pic btn__pic_cafe-unico"></span>
+                                    <span class="btn__pic btn__pic_credit"></span>
                                 </span>
-                                <span class="btn__text">Кафе "Unico"</span>
+                                <span class="btn__text">
+                                    кредитные специалисты
+                                </span>
                             </button>
                             <!-- /  -->
                         </li>
@@ -142,13 +150,15 @@
                 <li class="departments__item  departments__item_invested">
                     <!-- верхний  мелкий -->
                     <ul class="departments__list">
-                        <li class="departments__item departments__item_restaurant">
+                        <li class="departments__item departments__item_bank">
                             <!--   -->
                             <button class="btn btn_theme" data-link="url-page">
                                 <span class="btn__background">
-                                    <span class="btn__pic btn__pic_cafe-kivayaki"></span>
+                                    <span class="btn__pic btn__pic_cash-payment"></span>
                                 </span>
-                                <span class="btn__text">Кафе "Киваяки"</span>
+                                <span class="btn__text">
+                                    касса оплаты наличными
+                                </span>
                             </button>
                             <!--  / -->
                         </li>
@@ -156,13 +166,15 @@
                     <!-- /верхний  мелкий -->
                     <!-- средний  мелкий -->
                     <ul class="departments__list">
-                        <li class="departments__item departments__item_restaurant">
+                        <li class="departments__item departments__item_bank">
                             <!--   -->
                             <button class="btn btn_theme btn_theme-lightgray" data-link="url-page">
                                 <span class="btn__background">
-                                    <span class="btn__pic btn__pic_cafe-intepior"></span>
+                                    <span class="btn__pic btn__pic_exchange-euro"></span>
                                 </span>
-                                <span class="btn__text">Кафе "Intepior"</span>
+                                <span class="btn__text">
+                                    обмен валюты
+                                </span>
                             </button>
                             <!-- /  -->
                         </li>
@@ -170,14 +182,9 @@
                     <!-- /средний  мелкий -->
                     <!-- нижний мелкий  -->
                     <ul class="departments__list">
-                        <li class="departments__item departments__item_restaurant">
+                        <li class="departments__item departments__item_bank">
                             <!--   -->
-                            <button class="btn btn_theme btn_theme-gray" data-link="url-page">
-                                <span class="btn__background">
-                                    <span class="btn__pic btn__pic_cafe-vostochnoe"></span>
-                                </span>
-                                <span class="btn__text">Кафе "Восточное"</span>
-                            </button>
+
                             <!--  / -->
                         </li>
                     </ul>
@@ -186,9 +193,11 @@
                 <!-- /правый столбец кнопок -->
             </ul>
             <!-- /центральный блок -->
+
         </section>
     </div>
 </main>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="/common/bootstrap/js/bootstrap.min.js"></script>
 <script src="/common/jquery/OwlCarousel/js/owl.carousel.js"></script>

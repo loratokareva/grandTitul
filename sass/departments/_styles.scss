@@ -18,6 +18,7 @@
     padding: 5px;
     vertical-align: top;
 
+    // inner block
     &_invested {
       padding: 0;
     }
@@ -27,6 +28,13 @@
     &_small {
       height: 110px;
     }
+
+    &_pagination {
+      height: 100px;
+    }
+
+
+
     &_restaurant,
     &_bank,
     &_info {
@@ -36,9 +44,6 @@
     &_home {
       height: 178px;
       width: 178px;
-
-
-
     }
     &_subject {
       width: auto;
@@ -47,8 +52,16 @@
       vertical-align: middle;
     }
 
+    &_carousel {
+      width: 866px;
+    }
+    &_gate {
+      width: auto;
+    }
+    &_gate-height {
+      height: 562px;
 
-
+    }
     /*
 
       & > ul:first-child > & {

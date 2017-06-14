@@ -511,7 +511,7 @@ body {
   min-width: 320px;
   background: #d3cbb8;
   font: 400 18px/24px "Myriad Pro", Verdana, Arial, Helvetica, sans-serif;
-  color: #000;
+  color: #300f06;
   background: url("/grandTitul/img/bg-page.png") left bottom no-repeat; }
 
 :focus {
@@ -527,6 +527,12 @@ body {
   font: 400 48px/1 "Myriad Pro", Verdana, Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   text-align: center; }
+
+.title-gate {
+  font: 400 24px/1.2 "Myriad Pro", Verdana, Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 12px 0 26px; }
 
 .departments__list {
   display: table;
@@ -563,6 +569,8 @@ body {
     width: 50%; }
   .departments__item_small {
     height: 110px; }
+  .departments__item_pagination {
+    height: 100px; }
   .departments__item_restaurant, .departments__item_bank, .departments__item_info {
     height: 220px; }
   .departments__item_home {
@@ -573,6 +581,12 @@ body {
     padding: 0;
     margin: 0;
     vertical-align: middle; }
+  .departments__item_carousel {
+    width: 866px; }
+  .departments__item_gate {
+    width: auto; }
+  .departments__item_gate-height {
+    height: 562px; }
 
 .btn {
   position: relative;
@@ -606,10 +620,12 @@ body {
       height: 100%; }
     .btn_theme-brown {
       background-color: #ac9b87; }
+    .btn_theme-lightbrown {
+      background-color: #dbd3c4; }
     .btn_theme-gray {
       background-color: #989793; }
     .btn_theme-lightgray {
-      background-color: #b9b9b9; }
+      background-color: #dad2c3; }
   .btn .btn__background {
     display: block;
     position: absolute;
@@ -944,5 +960,132 @@ input:active, textarea:active {
 
 }
 */
+.logos-enterprises {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 0;
+  -moz-column-gap: 0;
+  column-gap: 0;
+  -webkit-column-rule-width: 0;
+  -moz-column-rule-width: 0;
+  column-rule-width: 0; }
+
+.brands {
+  position: relative;
+  height: 85px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-sizet: 0;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  overflow: hidden;
+  display: block; }
+  .brands__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto; }
+  .brands__inner {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 5;
+    margin: auto; }
+  .brands__title {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    font: 400 24px/1 "Myriad Pro", Verdana, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    z-index: 10; }
+
+.pagination-logo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center; }
+  .pagination-logo__list {
+    display: inline-block;
+    padding: 12px 0 12px; }
+  .pagination-logo__btn {
+    float: left;
+    font: 400 48px/1 "Myriad Pro", Verdana, Arial, Helvetica, sans-serif;
+    padding: 0 16px;
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    background-color: transparent; }
+  .pagination-logo__item {
+    display: inline-block;
+    border: 6px solid #dbd3c4;
+    border-left: none;
+    border-right: none;
+    color: #0d0000; }
+    .pagination-logo__item_disabled {
+      color: #999999; }
+    .pagination-logo__item_active, .pagination-logo__item_prev, .pagination-logo__item_next {
+      border: 6px solid #fff;
+      border-radius: 24px; }
+    .pagination-logo__item_prev, .pagination-logo__item_next {
+      width: 69px;
+      height: 60px; }
+    .pagination-logo__item_prev {
+      background: url("/grandTitul/img/nav/arrow-prev.png") 50% 50% no-repeat; }
+    .pagination-logo__item_next {
+      background: url("/grandTitul/img/nav/arrow-next.png") 50% 50% no-repeat; }
+
+.pagination-floor {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center; }
+  .pagination-floor__list {
+    display: inline-block;
+    padding: 0 10px; }
+    .pagination-floor__list:last-child {
+      margin-left: 86px; }
+  .pagination-floor__btn {
+    float: left;
+    font: 400 37px/1 "Myriad Pro", Verdana, Arial, Helvetica, sans-serif;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    color: #0d0000;
+    border: none;
+    background-color: transparent;
+    margin: 0; }
+  .pagination-floor__item {
+    display: inline-block;
+    border: 6px solid #dbd3c4;
+    border-left: none;
+    border-right: none;
+    color: #6d685e;
+    vertical-align: middle;
+    font: 400 37px/1 "Myriad Pro", Verdana, Arial, Helvetica, sans-serif;
+    /*    a {
+          float: left;
+          font: inherit;
+          width: 40px;
+          height: 40px;
+          text-decoration: none;
+          color: #0d0000;
+        }*/ }
+    .pagination-floor__item_active {
+      border: 6px solid #736357;
+      border-radius: 50%; }
+    .pagination-floor__item_place {
+      margin-right: 30px; }
 
 /*# sourceMappingURL=main.css.map */

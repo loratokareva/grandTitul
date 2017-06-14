@@ -1,0 +1,54 @@
+.pagination-floor {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  &__list {
+    display: inline-block;
+    padding: 0 10px;
+    &:last-child {
+      margin-left: 86px;
+    }
+  }
+  &__btn {
+    float: left;
+    font: 400 37px/1 "Myriad Pro", Verdana, Arial, Helvetica, sans-serif;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    color: #0d0000;
+    border: none;
+    background-color: transparent;
+    margin:0;
+    //padding:0;
+  }
+  &__item {
+    display: inline-block;
+    border: 6px solid #dbd3c4;
+    //border-radius: 50%;
+    border-left: none;
+    border-right: none;
+    color: #6d685e;
+    vertical-align: middle;
+    font: 400 37px/1 "Myriad Pro", Verdana, Arial, Helvetica, sans-serif;
+
+    &_active {
+      border: 6px solid #736357;
+      border-radius: 50%;
+    }
+
+/*    a {
+      float: left;
+      font: inherit;
+      width: 40px;
+      height: 40px;
+      text-decoration: none;
+      color: #0d0000;
+    }*/
+    &_place {
+      margin-right: 30px;
+    }
+  }
+}

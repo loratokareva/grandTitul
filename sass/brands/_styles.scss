@@ -1,0 +1,59 @@
+.logos-enterprises {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 0;
+  -moz-column-gap: 0;
+  column-gap: 0;
+  -webkit-column-rule-width:0;
+  -moz-column-rule-width:0;
+  column-rule-width:0;
+}
+
+.brands {
+  position: relative;
+  height:85px;
+  margin: 0;
+  padding:0;
+  text-align: center;
+  font-sizet: 0;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+
+  &__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+
+  &__inner {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 5;
+    margin: auto;
+  }
+
+  &__title {
+    display: block;
+    position: absolute;
+    bottom:0;
+    text-align: center;
+    width: 100%;
+    font: 400 24px/1 "Myriad Pro", Verdana, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    z-index: 10;
+  }
+
+}
+
+

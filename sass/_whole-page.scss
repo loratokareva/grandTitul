@@ -1,0 +1,44 @@
+* {
+  cursor: help;
+  //cursor: none;
+  box-sizing: border-box;
+}
+
+body {
+  overflow:hidden;
+  height: 100%;
+  min-width: 320px;
+  background: #d3cbb8;
+  font: 400 18px/24px "Myriad Pro", Verdana, Arial, Helvetica, sans-serif;
+  color: #300f06;
+  background: url("/grandTitul/img/bg-page.png") left bottom no-repeat;
+}
+
+:focus {
+  outline: none;
+}
+
+.main-page {
+}
+
+.container {
+  width: 1920px;
+  margin: 0 auto;
+  padding: 55px 86px 50px;
+}
+
+
+.title-page {
+  padding-right: 340px;
+  font: 400 48px/1 "Myriad Pro", Verdana, Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title-gate {
+  //padding-right: 340px;
+  font: 400 24px/1.2 "Myriad Pro", Verdana, Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 12px 0 26px;
+}

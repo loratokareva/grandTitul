@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Навигация Гранд | Сортировка с планом</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/common/jquery/OwlCarousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="/common/jquery/OwlCarousel/css/owl.theme.green.css">
+    <link rel="stylesheet" href="/grandTitul/css/main.css">
+</head>
+<body>
+
+<main class="main-page">
+    <div class="container">
+        <section class="departments">
+
+            <!-- Поиск -->
+            <form action="">
+                <section class="form-search">
+                    <div class="form-search__input">
+                        <div class="input-inner">
+                            <div class="input-inner__location">
+                                <input class="input-inner__control" type="text" name="search">
+                            </div>
+
+                            <div class="input-inner__addon">
+                                <span class="addon-img"></span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="form-search__button">
+                        <button class="btn btn_search" type="submit">
+                            Найти
+                        </button>
+                    </div>
+
+                </section>
+            </form>
+            <!-- /Поиск -->
+
+
+            <!-- Панель навигации -->
+            <ul class="departments__list departments__list_nav">
+                <li class="departments__item departments__item_home">
+                    <!-- Домой  -->
+                    <button class="btn btn_theme">
+                                <span class="btn__background btn__background_nav">
+                                    <span class="btn__pic btn__pic_home"></span>
+                                </span>
+                    </button>
+                    <!-- /Домой  -->
+                </li>
+                <li class="departments__item departments__item_home">
+                    <!-- возврат  -->
+                    <button class="btn btn_theme">
+                                <span class="btn__background btn__background_nav">
+                                    <span class="btn__pic btn__pic_arrow"></span>
+                                </span>
+                    </button>
+                    <!-- / возврат -->
+                </li>
+                <li class="departments__item departments__item_home  departments__item_subject">
+                    <!--  Заголовок страницы -->
+                    <h1 class="title-page">
+                        Мягкая мебель
+                    </h1>
+                    <!-- /Заголовок страницы  -->
+                </li>
+            </ul>
+            <!-- /Панель навигации -->
+
+
+            <!-- центральный блок -->
+            <ul class="departments__list">
+                <!-- левый столбец кнопок -->
+                <li class="departments__item  departments__item_sorting">
+                    <!--  -->
+                    <ul class="departments__list  departments__item_invested">
+                        <li class="departments__item  departments__item_invested departments__item_sorting-height">
+                            <!--  -->
+                            <div class="btn btn_theme btn_theme-lightbrown">
+
+                                <!-- логотипы предприятий-->
+                                <div class="logos-enterprises logos-enterprises_sorting">
+
+                                    <button class="brands">
+                                        <div class="brands__inner">
+                                            <img src="/grandTitul/img/brands/8marta.png" alt="" class="brands__img">
+                                        </div>
+                                        <div class="brands__title">
+                                            8 марта
+                                        </div>
+                                    </button>
+
+
+                                    <button class="brands">
+                                        <div class="brands__inner">
+                                            <img src="/grandTitul/img/brands/bogacho.png" alt="" class="brands__img">
+                                        </div>
+                                        <div class="brands__title">
+                                            Albert&Shtein
+                                        </div>
+                                    </button>
+
+                                    <button class="brands">
+                                        <div class="brands__inner">
+                                            <img src="/grandTitul/img/brands/amikamoda.png" alt="" class="brands__img">
+                                        </div>
+                                        <div class="brands__title">
+                                            AMIKA MODA
+                                        </div>
+                                    </button>
+
+                                    <button class="brands">
+                                        <div class="brands__inner">
+                                            <img src="/grandTitul/img/brands/anderssen.png" alt="" class="brands__img">
+                                        </div>
+                                        <div class="brands__title">
+                                            ANDERSSEN
+                                        </div>
+                                    </button>
+
+
+                                    <button class="brands">
+                                        <div class="brands__inner">
+                                            <img src="/grandTitul/img/brands/artmax.png" alt="" class="brands__img">
+                                        </div>
+                                        <div class="brands__title">
+                                            Art Max
+                                        </div>
+                                    </button>
+
+                                    <button class="brands">
+                                        <div class="brands__inner">
+                                            <img src="/grandTitul/img/brands/arteco.png" alt="" class="brands__img">
+                                        </div>
+                                        <div class="brands__title">
+                                            ARTECO
+                                        </div>
+                                    </button>
+
+                                    <button class="brands">
+                                        <div class="brands__inner">
+                                            <img src="/grandTitul/img/brands/arts.png" alt="" class="brands__img">
+                                        </div>
+                                        <div class="brands__title">
+                                            arts
+                                        </div>
+                                    </button>
+
+                                    <button class="brands">
+                                        <div class="brands__inner">
+                                            <img src="/grandTitul/img/brands/bjorkkvist.png" alt="" class="brands__img">
+                                        </div>
+                                        <div class="brands__title">
+                                            BJORKKVIST
+                                        </div>
+                                    </button>
+
+
+                                    <button class="brands">
+                                        <div class="brands__inner">
+                                            <img src="/grandTitul/img/brands/boconcept.png" alt="" class="brands__img">
+                                        </div>
+                                        <div class="brands__title">
+                                            BoConcept
+                                        </div>
+                                    </button>
+                                    <button class="brands">
+                                        <div class="brands__inner">
+                                            <img src="/grandTitul/img/brands/bogacho.png" alt="" class="brands__img">
+                                        </div>
+                                        <div class="brands__title">
+                                            bogacho
+                                        </div>
+                                    </button>
+
+                                    <button class="brands">
+                                        <div class="brands__inner">
+                                            <img src="/grandTitul/img/brands/britannica.png" alt="" class="brands__img">
+                                        </div>
+                                        <div class="brands__title">
+                                            BRITANNICA
+                                        </div>
+                                    </button>
+
+
+                                    <button class="brands">
+                                        <div class="brands__inner">
+                                            <img src="/grandTitul/img/brands/casa.png" alt="" class="brands__img">
+                                        </div>
+                                        <div class="brands__title">
+                                            casa
+                                        </div>
+                                    </button>
+
+
+
+                                    <button class="brands">
+                                        <div class="brands__inner">
+                                            <img src="/grandTitul/img/brands/8marta.png" alt="" class="brands__img">
+                                        </div>
+                                        <div class="brands__title">
+                                            8 марта
+                                        </div>
+                                    </button>
+
+
+                                    <button class="brands">
+                                        <div class="brands__inner">
+                                            <img src="/grandTitul/img/brands/bogacho.png" alt="" class="brands__img">
+                                        </div>
+                                        <div class="brands__title">
+                                            Albert&Shtein
+                                        </div>
+                                    </button>
+
+                                    <button class="brands">
+                                        <div class="brands__inner">
+                                            <img src="/grandTitul/img/brands/amikamoda.png" alt="" class="brands__img">
+                                        </div>
+                                        <div class="brands__title">
+                                            AMIKA MODA
+                                        </div>
+                                    </button>
+
+                                    <button class="brands">
+                                        <div class="brands__inner">
+                                            <img src="/grandTitul/img/brands/anderssen.png" alt="" class="brands__img">
+                                        </div>
+                                        <div class="brands__title">
+                                            ANDERSSEN
+                                        </div>
+                                    </button>
+
+
+                                    <button class="brands">
+                                        <div class="brands__inner">
+                                            <img src="/grandTitul/img/brands/artmax.png" alt="" class="brands__img">
+                                        </div>
+                                        <div class="brands__title">
+                                            Art Max
+                                        </div>
+                                    </button>
+
+                                    <button class="brands">
+                                        <div class="brands__inner">
+                                            <img src="/grandTitul/img/brands/arteco.png" alt="" class="brands__img">
+                                        </div>
+                                        <div class="brands__title">
+                                            ARTECO
+                                        </div>
+                                    </button>
+
+                                    <button class="brands">
+                                        <div class="brands__inner">
+                                            <img src="/grandTitul/img/brands/arts.png" alt="" class="brands__img">
+                                        </div>
+                                        <div class="brands__title">
+                                            arts
+                                        </div>
+                                    </button>
+
+                                    <button class="brands">
+                                        <div class="brands__inner">
+                                            <img src="/grandTitul/img/brands/bjorkkvist.png" alt="" class="brands__img">
+                                        </div>
+                                        <div class="brands__title">
+                                            BJORKKVIST
+                                        </div>
+                                    </button>
+
+
+                                </div>
+                                <!-- /логотипы предприятий-->
+
+
+                                <!--pagination-logo-->
+                                <div class="pagination-logo">
+                                    <ul class="pagination-logo__list">
+                                        <li class="pagination-logo__item pagination-logo__item_prev">
+                                            <button href="#" class="pagination-logo__btn" data-link="url-page"></button>
+                                        </li>
+                                        <li class="pagination-logo__item">
+                                            <button href="#" class="pagination-logo__btn" data-link="url-page">1
+                                            </button>
+                                        </li>
+                                        <li class="pagination-logo__item">
+                                            <button href="#" class="pagination-logo__btn" data-link="url-page">2
+                                            </button>
+                                        </li>
+                                        <li class="pagination-logo__item">
+                                            <button href="#" class="pagination-logo__btn" data-link="url-page">3
+                                            </button>
+                                        </li>
+                                        <li class="pagination-logo__item">
+                                            <button href="#" class="pagination-logo__btn" data-link="url-page">4
+                                            </button>
+                                        </li>
+                                        <li class="pagination-logo__item">
+                                            <button href="#" class="pagination-logo__btn" data-link="url-page">5
+                                            </button>
+                                        </li>
+                                        <li class="pagination-logo__item pagination-logo__item_active">
+                                            <button href="#" class="pagination-logo__btn" data-link="url-page">6
+                                            </button>
+                                        </li>
+                                        <li class="pagination-logo__item">
+                                            <button href="#" class="pagination-logo__btn" data-link="url-page">7
+                                            </button>
+                                        </li>
+                                        <li class="pagination-logo__item">
+                                            <button href="#" class="pagination-logo__btn" data-link="url-page">8
+                                            </button>
+                                        </li>
+                                        <li class="pagination-logo__item">
+                                            <button href="#" class="pagination-logo__btn" data-link="url-page">9
+                                            </button>
+                                        </li>
+                                        <li class="pagination-logo__item pagination-logo__item_next">
+                                            <button href="#" class="pagination-logo__btn" data-link="url-page"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--/pagination-logo-->
+
+                            </div>
+                            <!-- /  -->
+                        </li>
+                    </ul>
+                    <!-- / -->
+                </li>
+                <!-- /левый столбец кнопок -->
+                <!--правая колока-->
+                <li class="departments__item departments__item_invested departments__item_alphabet-sorting">
+                    <!-- верхний  мелкий -->
+                    <ul class="departments__list">
+                        <li class="departments__item departments__item_middle">
+                            <!-- По этажам  -->
+                            <button class="btn btn_theme btn_theme_middle btn_theme-brown" id="floors"
+                                    data-link="url-page">
+                                По этажам
+                            </button>
+                            <!-- /По этажам  -->
+                        </li>
+                    </ul>
+                    <!-- /верхний  мелкий -->
+                    <!-- средний мелкий  -->
+                    <ul class="departments__list">
+                        <li class="departments__item departments__item_middle">
+                            <!-- По алфавиту  -->
+                            <button class="btn btn_theme btn_theme_middle" id="alphabet"
+                                    data-link="url-page">
+                                По алфавиту
+                            </button>
+                            <!--  /По алфавиту -->
+                        </li>
+                    </ul>
+                    <!-- /средний мелкий  -->
+                    <!-- нижний мелкий  -->
+                    <ul class="departments__list">
+                        <li class="departments__item departments__item_pagination">
+                            <!--  floor plans -->
+                            <div class="btn_theme btn_theme-lightbrown">
+
+                                <ul class="departments__list">
+                                    <li class="departments__item  departments__item_sorting">
+
+                                        <!--pagination-sorting-->
+                                        <div class="pagination-sorting">
+
+                                            <ul class="pagination-sorting__list">
+                                                <li class="pagination-sorting__item pagination-sorting__item_place">
+                                                    гранд 1
+                                                </li>
+                                                <li class="pagination-sorting__item">
+                                                    <button href="#" class="pagination-sorting__btn"
+                                                            data-link="url-page">1
+                                                    </button>
+                                                </li>
+                                                <li class="pagination-sorting__item">
+                                                    <button href="#"
+                                                            class="pagination-sorting__btn pagination-sorting__btn_active"
+                                                            data-link="url-page">2
+                                                    </button>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                        <!--/pagination-sorting-->
+
+                                    </li>
+                                    <li class="departments__item departments__item_sorting">
+
+                                        <!--pagination-sorting-->
+                                        <div class="pagination-sorting">
+
+
+                                            <ul class="pagination-sorting__list">
+                                                <li class="pagination-sorting__item pagination-sorting__item_place">
+                                                    гранд 2
+                                                </li>
+                                                <li class="pagination-sorting__item">
+                                                    <button href="#" class="pagination-sorting__btn"
+                                                            data-link="url-page">0
+                                                    </button>
+                                                </li>
+                                                <li class="pagination-sorting__item">
+                                                    <button href="#" class="pagination-sorting__btn"
+                                                            data-link="url-page">1
+                                                    </button>
+                                                </li>
+                                                <li class="pagination-sorting__item">
+                                                    <button href="#" class="pagination-sorting__btn"
+                                                            data-link="url-page">2
+                                                    </button>
+                                                </li>
+                                                <li class="pagination-sorting__item">
+                                                    <button href="#" class="pagination-sorting__btn"
+                                                            data-link="url-page">3
+                                                    </button>
+                                                </li>
+                                                <li class="pagination-sorting__item">
+                                                    <button href="#" class="pagination-sorting__btn"
+                                                            data-link="url-page">4
+                                                    </button>
+                                                </li>
+                                                <li class="pagination-sorting__item">
+                                                    <button href="#" class="pagination-sorting__btn"
+                                                            data-link="url-page">5
+                                                    </button>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                        <!--/pagination-sorting-->
+
+                                    </li>
+                                </ul>
+
+
+                            </div>
+                            <!-- /floor plans  -->
+                        </li>
+                    </ul>
+                    <!-- /нижний мелкий  -->
+                </li>
+                <!--/правая колока-->
+
+            </ul>
+            <!-- /центральный блок -->
+
+        </section>
+    </div>
+</main>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/common/bootstrap/js/bootstrap.min.js"></script>
+<script src="/common/jquery/OwlCarousel/js/owl.carousel.js"></script>
+<script>
+    $(function () {
+        $("#grand-carousel").owlCarousel({
+            nav: false,
+            dots: false,
+            loop: true,
+            slideSpeed: 500,
+            autoplay: true,
+            autoplayTimeout: 4500,
+
+            items: 1,
+            itemsDesktop: false,
+            itemsDesktopSmall: false,
+            itemsTablet: false,
+            itemsMobile: false
+
+        });
+    });
+</script>
+</body>
+</html>
+

@@ -563,14 +563,21 @@ body {
     }
 
     */ }
+  .departments__item_alphabet-sorting {
+    width: 424px; }
   .departments__item_invested {
     padding: 0; }
   .departments__item_main {
     width: 50%; }
   .departments__item_small {
     height: 110px; }
+  .departments__item_middle {
+    height: 96px; }
   .departments__item_pagination {
     height: 100px; }
+  .departments__item_sorting {
+    height: 449px;
+    position: relative; }
   .departments__item_restaurant, .departments__item_bank, .departments__item_info {
     height: 220px; }
   .departments__item_home {
@@ -587,6 +594,10 @@ body {
     width: auto; }
   .departments__item_gate-height {
     height: 562px; }
+  .departments__item_sorting-height {
+    height: 652px; }
+  .departments__item_sorting {
+    width: auto; }
 
 .btn {
   position: relative;
@@ -616,8 +627,10 @@ body {
           -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
         }*/ }
-    .btn_theme_small {
+    .btn_theme_small, .btn_theme_middle {
       height: 100%; }
+    .btn_theme_middle {
+      font: 400 37px/1 "Myriad Pro", Verdana, Arial, Helvetica, sans-serif; }
     .btn_theme-brown {
       background-color: #ac9b87; }
     .btn_theme-lightbrown {
@@ -970,6 +983,11 @@ input:active, textarea:active {
   -webkit-column-rule-width: 0;
   -moz-column-rule-width: 0;
   column-rule-width: 0; }
+  .logos-enterprises_sorting {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    margin-top: 50px; }
 
 .brands {
   position: relative;
@@ -1087,5 +1105,43 @@ input:active, textarea:active {
       border-radius: 50%; }
     .pagination-floor__item_place {
       margin-right: 30px; }
+
+.pagination-sorting {
+  position: absolute;
+  top: 27px;
+  left: 0;
+  right: 0;
+  text-align: center; }
+  .pagination-sorting__list {
+    display: inline-block;
+    padding: 0;
+    list-style-type: none;
+    /*    &:last-child {
+          margin-left: 86px;
+        }*/ }
+  .pagination-sorting__btn {
+    font: 400 37px/1 "Myriad Pro", Verdana, Arial, Helvetica, sans-serif;
+    width: 52px;
+    height: 52px;
+    text-decoration: none;
+    color: #0d0000;
+    border: 6px solid #dbd3c4;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    margin: 0;
+    padding-bottom: 2px; }
+    .pagination-sorting__btn_active {
+      border: 6px solid #736357;
+      border-radius: 50%; }
+  .pagination-sorting__item {
+    display: list-item;
+    color: #6d685e;
+    vertical-align: middle;
+    font: 400 37px/1 "Myriad Pro", Verdana, Arial, Helvetica, sans-serif; }
+    .pagination-sorting__item_place {
+      color: #0d0000;
+      text-transform: uppercase;
+      padding-bottom: 28px; }
 
 /*# sourceMappingURL=main.css.map */

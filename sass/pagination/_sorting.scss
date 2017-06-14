@@ -1,0 +1,51 @@
+.pagination-sorting {
+  position: absolute;
+  top: 27px;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  &__list {
+    display: inline-block;
+    padding: 0;
+    list-style-type: none;
+
+/*    &:last-child {
+      margin-left: 86px;
+    }*/
+  }
+  &__btn {
+    //float: left;
+    font: 400 37px/1 "Myriad Pro", Verdana, Arial, Helvetica, sans-serif;
+    width: 52px;
+    height: 52px;
+    //line-height: 50px;
+    text-decoration: none;
+    color: #0d0000;
+    border: 6px solid #dbd3c4;
+    //border-radius: 50%;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    margin:0;
+    padding-bottom: 2px;
+    //padding:0;
+    &_active {
+      border: 6px solid #736357;
+      border-radius: 50%;
+    }
+
+  }
+  &__item {
+    display: list-item;
+
+    color: #6d685e;
+    vertical-align: middle;
+    font: 400 37px/1 "Myriad Pro", Verdana, Arial, Helvetica, sans-serif;
+    &_place {
+      color: #0d0000;
+      text-transform: uppercase;
+      padding-bottom: 28px;
+    }
+  }
+}

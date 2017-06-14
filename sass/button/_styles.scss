@@ -31,8 +31,12 @@
           transition: all .3s ease-in-out;
         }*/
 
-    &_small {
+    &_small,
+    &_middle{
       height: 100%;
+    }
+    &_middle{
+      font: 400 37px/1 "Myriad Pro", Verdana, Arial, Helvetica, sans-serif;
     }
 
     &-brown {

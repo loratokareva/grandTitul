@@ -8,7 +8,17 @@
   -webkit-column-rule-width:0;
   -moz-column-rule-width:0;
   column-rule-width:0;
+
+  &_sorting {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    margin-top: 50px;
+  }
+
 }
+
+
 
 .brands {
   position: relative;

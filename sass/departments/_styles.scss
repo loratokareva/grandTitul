@@ -8,6 +8,7 @@
     &_nav {
       margin: 23px 0 24px; // 18px 0 24px
     }
+
   }
 
   &__item {
@@ -17,6 +18,10 @@
     height: 222px;
     padding: 5px;
     vertical-align: top;
+
+    &_alphabet-sorting {
+      width: 424px;
+    }
 
     // inner block
     &_invested {
@@ -28,12 +33,18 @@
     &_small {
       height: 110px;
     }
+    &_middle {
+      height: 96px;
+    }
 
     &_pagination {
       height: 100px;
     }
 
-
+    &_sorting {
+      height: 449px;
+      position: relative;
+    }
 
     &_restaurant,
     &_bank,
@@ -60,8 +71,17 @@
     }
     &_gate-height {
       height: 562px;
-
     }
+
+    &_sorting-height {
+      height: 652px;
+    }
+
+    &_sorting {
+      width: auto;
+    }
+
+
     /*
 
       & > ul:first-child > & {

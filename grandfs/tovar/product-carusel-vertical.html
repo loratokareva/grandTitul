@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <link href="/common/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/common/jquery/OwlCarousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="/common/jquery/OwlCarousel/css/owl.theme.green.css">
+    <style>
+        #product-wrapper {
+            width: 510px;
+            height: 340px;
+            margin: 50px auto;
+        }
+
+        #product-wrapper .item img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        #product-wrapper .owl-theme .owl-nav.disabled + .owl-dots {
+            position: absolute;
+            top: 0;
+            left: -103px;
+            margin-top: 0;
+        }
+        #product-wrapper .owl-theme .owl-dots .owl-dot span {
+            border-radius: 0;
+            width: 70px;
+            height: 60px;
+            margin: 0 0;
+        }
+
+        #product-wrapper  .owl-theme .owl-dots .owl-dot.active {
+            border: 1px solid #dba744;
+            box-sizing: content-box;
+        }
+        #product-wrapper .owl-stage-outer {
+            z-index: 5;
+        }
+
+        #product-wrapper .owl-theme .owl-dots .owl-dot {
+            display: block;
+            border: 1px solid transparent;
+            box-sizing: content-box;
+            margin-bottom: 24px;
+        }
+
+        #product-wrapper .owl-theme .owl-dots .owl-dot:nth-child(1)  span {
+            background-image: url("/grandTitul/grandfs/img/products/id1/small/1.png");
+        }
+
+        #product-wrapper .owl-theme .owl-dots .owl-dot:nth-child(2) span {
+            background-image: url("/grandTitul/grandfs/img/products/id1/small/2.png");
+        }
+
+
+        #product-wrapper .owl-theme .owl-dots .owl-dot:nth-child(3)  span{
+            background-image: url("/grandTitul/grandfs/img/products/id1/small/3.png");
+        }
+
+        #product-wrapper .owl-theme .owl-dots .owl-dot:nth-child(4)  span{
+            background-image: url("/grandTitul/grandfs/img/products/id1/small/4.png");
+        }
+
+
+        @media screen and (min-width: 768px) and (max-width: 992px)  {
+
+
+            #product-wrapper  .owl-theme .owl-dots .owl-dot {
+                display: inline-block;
+                margin-bottom: 0;
+                margin-right: 45px;
+            }
+            #product-wrapper .owl-theme .owl-nav.disabled + .owl-dots {
+                position: absolute;
+                top: 380px;
+                left: 0;
+                margin-top: 0;
+            }
+
+
+        }
+    </style>
+
+    <title>jQuery owl-carousel Галлерея товара</title>
+
+
+</head>
+<body>
+
+<div id="product-wrapper">
+
+    <div id="product-carousel" class="owl-carousel owl-theme">
+        <div class="item"><img src="/grandTitul/grandfs/img/products/id1/large/1.png"></div>
+        <div class="item"><img src="/grandTitul/grandfs/img/products/id1/large/2.jpg"></div>
+        <div class="item"><img src="/grandTitul/grandfs/img/products/id1/large/3.jpg"></div>
+        <div class="item"><img src="/grandTitul/grandfs/img/products/id1/large/4.jpg"></div>
+    </div>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/common/bootstrap/js/bootstrap.min.js"></script>
+<script src="/common/jquery/OwlCarousel/js/owl.carousel.js"></script>
+<script>
+    $(function () {
+        $("#product-carousel").owlCarousel({
+            navigation : false,
+            loop:true,
+            slideSpeed : 300,
+            paginationSpeed : 400,
+
+            items : 1,
+            itemsDesktop : false,
+            itemsDesktopSmall : false,
+            itemsTablet: false,
+            itemsMobile : false
+
+        });
+
+
+
+    });
+</script>
+</body>
+</html>

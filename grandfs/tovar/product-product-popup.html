@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <link href="/common/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/common/jquery/OwlCarousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="/common/jquery/OwlCarousel/css/owl.theme.green.css">
+    <style>
+
+        .product-popup-wrapper {
+            width: 966px;
+            height: 870px;
+            margin: auto;
+        }
+        .product-popup-wrapper:after {
+            top: 0;
+            right: -89px;
+            content: " ";
+            height: 783px;
+            width: 1px;
+            position: absolute;
+            background-color: #b6bdcc;
+            /*border-right: 1px solid #b6bdcc;*/
+        }
+.product-popup-clouse {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top:0;
+    right: -35px;
+    background: url("/grandTitul/grandfs/img/clouse.png");
+
+}
+
+        #product-popup {
+            width: 966px;
+            height: 644px;
+            margin: 50px auto;
+        }
+
+        #product-popup .item img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        #product-popup .owl-theme .owl-nav + .owl-dots {
+            position: absolute;
+            top: -50px;
+            right: -512px;
+            margin-top: 0;
+        }
+
+        #product-popup .owl-theme .owl-dots .owl-dot span {
+            border-radius: 0;
+            width: 70px;
+            height: 60px;
+            margin: 0 0;
+        }
+
+        #product-popup .owl-theme .owl-dots .owl-dot.active {
+            border: 1px solid #dba744;
+            box-sizing: content-box;
+        }
+
+        #product-popup .owl-stage-outer {
+            z-index: 5;
+        }
+
+        #product-popup .owl-theme .owl-dots .owl-dot {
+            display: block;
+            border: 1px solid transparent;
+            box-sizing: content-box;
+            margin-bottom: 24px;
+        }
+
+        #product-popup .owl-theme .owl-dots .owl-dot:nth-child(1) span {
+            background-image: url("/grandTitul/grandfs/img/products/id1/small/1.png");
+        }
+
+        #product-popup .owl-theme .owl-dots .owl-dot:nth-child(2) span {
+            background-image: url("/grandTitul/grandfs/img/products/id1/small/2.png");
+        }
+
+        #product-popup .owl-theme .owl-dots .owl-dot:nth-child(3) span {
+            background-image: url("/grandTitul/grandfs/img/products/id1/small/3.png");
+        }
+
+        #product-popup .owl-theme .owl-dots .owl-dot:nth-child(4) span {
+            background-image: url("/grandTitul/grandfs/img/products/id1/small/4.png");
+        }
+
+        #product-popup .owl-theme .owl-nav {
+            position: absolute;
+            bottom: -111px;
+            right: -393px;
+        }
+
+        #product-popup .owl-theme .owl-nav [class*='owl-'] {
+
+            font-size: 0;
+            margin: 31px 51px;
+            padding: 0;
+            position: relative;
+            background: #ffffff;
+            display: block;
+            cursor: pointer;
+            border-radius: 0;
+            height: 18px;
+            width: 39px;
+            border: none;
+        }
+
+        #product-popup .owl-theme .owl-nav .owl-prev:after,
+        #product-popup .owl-theme .owl-nav .owl-prev:before {
+            bottom: 0;
+            left: 20px;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
+
+        #product-popup .owl-theme .owl-nav .owl-prev:after {
+            border-color: rgba(255, 255, 255, 0);
+            border-bottom-color: #ffffff;
+            border-width: 14px;
+            margin-left: -14px;
+        }
+
+        #product-popup .owl-theme .owl-nav .owl-prev:before {
+            border-color: rgba(182, 189, 204, 0);
+            border-bottom-color: #b6bdcc;
+            border-width: 18px;
+            margin-left: -18px;
+        }
+
+        #product-popup .owl-theme .owl-nav .owl-next:after,
+        #product-popup .owl-theme .owl-nav .owl-next:before {
+            top: 0;
+            left: 20px;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
+
+        #product-popup .owl-theme .owl-nav .owl-next:after {
+            border-color: rgba(255, 255, 255, 0);
+            border-top-color: #ffffff;
+            border-width: 14px;
+            margin-left: -14px;
+        }
+
+        #product-popup .owl-theme .owl-nav .owl-next:before {
+            border-color: rgba(182, 189, 204, 0);
+            border-top-color: #b6bdcc;
+            border-width: 18px;
+            margin-left: -18px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+
+            #product-popup .owl-theme .owl-dots .owl-dot {
+                display: inline-block;
+                margin-bottom: 0;
+                margin-right: 45px;
+            }
+
+            #product-popup .owl-theme .owl-nav + .owl-dots {
+                position: absolute;
+                top: 380px;
+                left: 0;
+                margin-top: 0;
+            }
+
+        }
+    </style>
+
+    <title>jQuery owl-carousel Галлерея товара</title>
+
+
+</head>
+<body>
+<div class="product-popup-wrapper">
+
+    <div class="product-popup-clouse">
+
+    </div>
+
+    <div id="product-popup">
+        <div id="product-popup-carousel" class="owl-carousel owl-theme">
+            <div class="item"><img src="/grandTitul/grandfs/img/products/id1/largest/1.png"></div>
+            <div class="item"><img src="/grandTitul/grandfs/img/products/id1/largest/1.png"></div>
+            <div class="item"><img src="/grandTitul/grandfs/img/products/id1/largest/1.png"></div>
+            <div class="item"><img src="/grandTitul/grandfs/img/products/id1/largest/1.png"></div>
+        </div>
+
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/common/bootstrap/js/bootstrap.min.js"></script>
+<script src="/common/jquery/OwlCarousel/js/owl.carousel.js"></script>
+<script>
+    $(function () {
+        $("#product-popup-carousel").owlCarousel({
+            nav: true,
+            loop: true,
+            navText: false,
+            slideSpeed: 300,
+            paginationSpeed: 400,
+
+            items: 1,
+            itemsDesktop: false,
+            itemsDesktopSmall: false,
+            itemsTablet: false,
+            itemsMobile: false
+
+        });
+
+
+    });
+</script>
+</body>
+</html>

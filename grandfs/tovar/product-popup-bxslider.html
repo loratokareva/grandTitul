@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery bxslider popup</title>
+
+    <!-- изменения 22,06,2017 начало-->
+
+    <!-- jQuery library (served from Google) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="https://loratokareva.github.io/common/bxslider/jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="https://loratokareva.github.io/common/bxslider/jquery.bxslider.css" rel="stylesheet"/>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper-popup {
+            /*background-color: lightcyan;*/
+            position: relative;
+            max-width: 1480px;
+            padding-top: 112px;
+            /*width: 966px;
+            margin: auto;
+            height: 870px;
+            owerflow: hidden;*/
+        }
+
+        .wrapper-popup:after {
+            top: 0;
+            right: 115px;
+            content: " ";
+            height: 783px;
+            width: 1px;
+            position: absolute;
+            background-color: #b6bdcc;
+            /*border-right: 1px solid #b6bdcc;*/
+        }
+
+        #wrapper-bxslider-popup {
+            position: relative;
+            /*max-width: 100%;*/
+            width: 966px;
+            height: 870px;
+            /*owerflow: hidden;*/
+            /*margin: 0 0 0 103px;*/
+        }
+
+        #wrapper-bxslider-popup .bx-wrapper {
+            box-shadow: none;
+            border: none;
+            background: #fff;
+            margin-bottom: 10px;
+        }
+
+        #wrapper-bxslider-popup .bxslider-popup {
+            margin: 0;
+        }
+
+        #wrapper-bxslider-popup #bx-pager-popup {
+            position: absolute;
+            top: -112px;
+            right: -512px;
+        }
+
+        #wrapper-bxslider-popup #bx-pager-popup .bx-pager-popup__link {
+            display: block;
+            position: relative;
+            width: 70px;
+            height: 60px;
+            border: 1px solid #fff;
+            box-sizing: content-box;
+            margin-bottom: 24px;
+        }
+
+        #wrapper-bxslider-popup #bx-pager-popup .bx-pager-popup__link.active {
+            border: 1px solid #dba744;
+
+        }
+
+        #wrapper-bxslider-popup #bx-pager-popup .bx-pager-popup__link img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: auto;
+            max-width: 70px;
+            max-height: 60px;
+            margin: auto;
+        }
+
+        #wrapper-bxslider-popup .bxslider-popup > li {
+            height: 644px;
+            width: 966px;
+            /*margin: 0 auto;*/
+        }
+
+        #wrapper-bxslider-popup .bxslider-popup > li img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            max-height: 644px;
+            width: auto;
+            margin: auto;
+        }
+
+        #wrapper-bxslider-popup .bx-controls-direction {
+            position: absolute;
+            top: 575px;
+            right: -345px;
+        }
+
+        #wrapper-bxslider-popup .bx-wrapper .bx-controls-direction a {
+            font-size: 0;
+            margin: 31px 0;
+            padding: 0;
+            position: relative;
+            background: #ffffff;
+            display: block;
+            cursor: pointer;
+            border-radius: 0;
+            height: 18px;
+            width: 39px;
+            border: none;
+        }
+
+        #wrapper-bxslider-popup .bx-controls-direction .bx-prev,
+        #wrapper-bxslider-popup .bx-controls-direction .bx-next {
+            right: 0;
+            left: 0;
+        }
+
+        #wrapper-bxslider-popup .bx-controls-direction .bx-prev:after,
+        #wrapper-bxslider-popup .bx-controls-direction .bx-prev:before {
+            bottom: 0;
+            left: 20px;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
+
+        #wrapper-bxslider-popup .bx-controls-direction .bx-prev:after {
+            border-color: rgba(255, 255, 255, 0);
+            border-bottom-color: #ffffff;
+            border-width: 14px;
+            margin-left: -14px;
+        }
+
+        #wrapper-bxslider-popup .bx-controls-direction .bx-prev:before {
+            border-color: rgba(182, 189, 204, 0);
+            border-bottom-color: #b6bdcc;
+            border-width: 18px;
+            margin-left: -18px;
+        }
+
+        #wrapper-bxslider-popup .bx-controls-direction .bx-next:after,
+        #wrapper-bxslider-popup .bx-controls-direction .bx-next:before {
+            top: 0;
+            left: 20px;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
+
+        #wrapper-bxslider-popup .bx-controls-direction .bx-next:after {
+            border-color: rgba(255, 255, 255, 0);
+            border-top-color: #ffffff;
+            border-width: 14px;
+            margin-left: -14px;
+        }
+
+        #wrapper-bxslider-popup .bx-controls-direction .bx-next:before {
+            border-color: rgba(182, 189, 204, 0);
+            border-top-color: #b6bdcc;
+            border-width: 18px;
+            margin-left: -18px;
+        }
+
+        .bxslider-popup-clouse {
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            top: 0;
+            right: 170px;
+            background: url("/grandTitul/grandfs/img/clouse.png");
+
+        }
+
+    </style>
+
+
+    <!-- изменения 22,06,2017 конец-->
+
+
+</head>
+<body>
+
+<div class="wrapper-popup">
+
+    <div class="bxslider-popup-clouse">
+
+    </div>
+
+
+    <div id="wrapper-bxslider-popup">
+        <ul class="bxslider-popup">
+            <li><img src="https://loratokareva.github.io/grandTitul/grandfs/img/products/id1/largest/1.png"/></li>
+            <li><img src="https://www.grandfs.ru/catalog_images/h340/44_21802_0.jpg"/></li>
+            <li><img src="https://www.mnogo.ru/enterpics/enter2599/pic777_160328.jpg"/></li>
+            <li><img src="https://www.grandfs.ru/catalog_images/h340/48_2013296_0.jpg"/></li>
+
+            <li><img src="https://www.mnogo.ru/enterpics/enter1707/pic10_112911.jpg"/></li>
+            <li><img src="https://loratokareva.github.io/grandTitul/grandfs/img/products/id1/largest/1.png"/></li>
+        </ul>
+
+        <div id="bx-pager-popup">
+            <a data-slide-index="0" href="" class="bx-pager-popup__link"><img
+                    src="https://loratokareva.github.io/grandTitul/grandfs/img/products/id1/small/1.png"/></a>
+            <a data-slide-index="1" href="" class="bx-pager-popup__link"><img
+                    src="https://loratokareva.github.io/grandTitul/grandfs/img/products/id1/small/2.png"/></a>
+            <a data-slide-index="2" href="" class="bx-pager-popup__link"><img
+                    src="https://loratokareva.github.io/grandTitul/grandfs/img/products/id1/small/3.png"/></a>
+            <a data-slide-index="3" href="" class="bx-pager-popup__link"><img
+                    src="https://www.grandfs.ru/catalog_images/h340/48_2013296_0.jpg"/></a>
+
+            <a data-slide-index="4" href="" class="bx-pager-popup__link"><img
+                    src="https://www.grandfs.ru/catalog_images/h77/1_15767_1.jpg"/></a>
+            <a data-slide-index="5" href="" class="bx-pager-popup__link"><img
+                    src="https://www.grandfs.ru/catalog_images/h77/1_8641_1.jpg"/></a>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<script>
+    $(document).ready(function () {
+
+        $('.bxslider-popup').bxSlider({
+            pagerCustom: '#bx-pager-popup'
+        });
+    });
+</script>
+
+
+</body>
+</html>
